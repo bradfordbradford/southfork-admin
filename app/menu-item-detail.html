@@ -1,0 +1,328 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SouthFork Admin Dashboard</title>
+   <link rel="stylesheet" href="css/app.css">
+   <script src="bower_components/modernizr/modernizr.js"></script>
+   <script src="//use.typekit.net/dmn4svs.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+   <link href="https://fontastic.s3.amazonaws.com/NEQLgq6DtLDXovVKoDNeJY/icons.css" rel="stylesheet">
+</head>
+<body>
+
+   <nav class="top-bar" data-topbar role="navigation">
+     <ul class="title-area">
+       <li class="name">
+         <h1><a href="/"><img src="images/logo.png" alt=""></a></h1>
+       </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+     </ul>
+
+     <section class="top-bar-section">
+       <ul class="right">
+         <li class="has-dropdown">
+           <a href="#">Andy</a>
+           <ul class="dropdown">
+             <li><a href="#">Settings</a></li>
+             <li><a href="#">Driver Portal</a></li>
+             <li class="divider"></li>
+             <li><a href="#">Sign Out</a></li>
+           </ul>
+         </li>
+       </ul>
+     </section>
+   </nav>
+
+   <main class="container">
+      <section id="dashboard-nav" class="large-2 columns">
+         <nav>
+            <ul>
+               <li><a href="/">Orders</a></li>
+               <li><a href="locations-overview.html">Locations</a></li>
+               <li><h6 class="title">Menu</h6></li>
+               <li><a href="menu-overview.html">Menu</a></li>
+               <li class="active"><a href="menu-items-overview.html">Items</a></li>
+               <li><a href="chefs-overview.html">Chefs</a></li>
+               <li><h6 class="title">Content</h6></li>
+               <li><a href="edit-content.html">Home</a></li>
+               <li><a href="edit-content.html">Contact</a></li>
+               <li><a href="edit-content.html">About</a></li>
+               <li><a href="edit-content.html">Legal</a></li>
+               <li><a href="edit-content.html">(etc)</a></li>
+            </ul>
+         </nav>
+      </section>
+
+      <section id="dashboard-main">
+         <div class="large-10 columns">
+
+            <header class="dashboard-header">
+              <h5 class="title">Menu Item</h5>
+              <h6 class="filter">Pan Roasted Chicken Breast</h6>
+              <div class="filter table-tools no-border">
+                <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="right button info dropdown tiny"><span data-icon="f"></span></button><br>
+                <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                  <li><a data-reveal-id="edit-dish-status-modal"  href="#">Edit Status</a></li>
+                  <li><a data-reveal-id="delete-dish-modal" href="#">Delete</a></li>
+                </ul>
+              </div>
+
+              <div class="options right">
+                <ul class="button-group">
+                  <li><a href="#" class="button tiny"><span data-icon="a"></span></a></li>
+                  <li><a href="#" class="button tiny"><span data-icon="b"></span></a></li>
+                </ul>
+              </div>
+            </header>
+
+            <section class="dashboard-content">
+              <div class="large-8 columns left-content">
+                <section class="panel-tabs">
+                  <ul class="tabs " data-tab>
+                    <li class="tab-title active"><a href="#panel1">Details</a></li>
+                    <li class="tab-title"><a href="#panel2">Ingredients</a></li>
+                    <li class="tab-title"><a href="#panel3">Nutrition</a></li>
+                  </ul>
+                  <div class="tabs-content panel-tabs-content">
+                    <div class="content active" id="panel1">
+                      <div class="large-12 columns">
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>Description</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, consectetur, ab. Explicabo, aliquam! Quis repellat illo, quisquam id dolorem, laudantium recusandae ullam, earum laborum praesentium quos ipsum sunt porro est…</p>
+                      </div>
+                    </div>
+                    <!-- <div class="content" id="panel2">
+                      <div class="large-12 columns">
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>Notes</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+                        <p>Let teriyaki sauce come to room temperature.</p>
+                      </div>
+                      <div class="large-6 columns">
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>In the Oven</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+                        <p>heat to 375. Heat chicken for 10-12 min- and brussels, mushrooms and bacon 6-7min.</p>
+                      </div>
+                      <div class="large-6 columns">
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>In The Microwave</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+                        <p>Heat chicken and set for 2-3 min or until desired temp.</p>
+                      </div>
+                      <div class="large-12 columns">
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>To Serve</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+                        <p>Add teriyaki sauce as desired and enjoy!</p>
+                      </div>
+                    </div> -->
+                    <div class="content" id="panel2">
+                      <div class="large-6 columns">
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>Ingredients</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+                        <ul class="">
+                          <li>Teriyaki Sauce</li>
+                          <li>Brussels sprouts</li>
+                          <li>Yellow onions</li>
+                          <li>Chicken breast</li>
+                          <li>Enoki mushrooms</li>
+                          <li>Bacon</li>
+                          <li>Olive Oil</li>
+                          <li>Black pepper</li>
+                          <li>Kosher Salt</li>
+                        </ul>
+                      </div>
+                      <div class="large-6 columns">
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>Highlighted Ingredients</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+                        <ul class="">
+                          <li>Brussels sprouts</li>
+                          <li>Bacon</li>
+                          <li>Olive Oil</li>
+                        </ul>
+                        <hr>
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>Dietary Tags</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+
+                        <span class="label success">Vegan</span>
+                      </div>
+                      <div class="large-12 columns">
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>Food Allergy Notice</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+                        <p>Food Allergy Notice: Our meals are prepared in a kitchen whose environment contains nuts and gluten. Though best practices are used when preparing the meal, inadvertent cross-contamination may occur. We cannot guarantee the complete absence of allergens.</p>
+                      </div>
+                    </div>
+                    <div class="content" id="panel3">
+                      <div class="large-12 columns">
+                        <header class="content-row panel-tabs-header">
+                          <div class="title"><strong>Nutrition Facts</strong></div>
+                          <div class="edit"><a href="#">Edit</a></div>
+                        </header>
+                        <table class="no-borders">
+                          <tbody>
+                            <tr>
+                              <td colspan="2"><strong>Total Fat</strong></td>
+                              <td class="ng-binding">61g</td>
+                            </tr>
+
+                            <tr>
+                              <td> </td>
+                              <td>Saturated Fat</td>
+                              <td class="ng-binding">15g</td>
+                            </tr>
+
+                            <tr>
+                              <td> </td>
+                              <td>Trans Fat</td>
+                              <td class="ng-binding">0g</td>
+                            </tr>
+
+                            <tr>
+                              <td> </td>
+                              <td>Polyunsaturated Fat</td>
+                              <td class="ng-binding">15g</td>
+                            </tr>
+
+                            <tr>
+                              <td> </td>
+                              <td>Monounsaturated Fat</td>
+                              <td class="ng-binding">24g</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="2"><strong>Cholesterol</strong></td>
+                              <td class="ng-binding">130mg</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="2"><strong>Sodium</strong></td>
+                              <td class="ng-binding">1180mg</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="2"><strong>Total Carbs</strong></td>
+                              <td class="ng-binding">32g</td>
+                            </tr>
+
+                            <tr>
+                              <td> </td>
+                              <td>Dietary Fiber</td>
+                              <td class="ng-binding">10g</td>
+                            </tr>
+
+                            <tr>
+                              <td> </td>
+                              <td>Sugars</td>
+                              <td class="ng-binding">3g</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="2"><strong>Protein</strong></td>
+                              <td class="ng-binding">44g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="large-4 columns right-content">
+                <div class="panel">
+                  <header class="panel-header">
+                    <h6 class="title">Availability</h6>
+
+                    <ul class="button-group options">
+                      <li class="right"><a href="#" class="button info tiny"><span data-icon="g"></span></a></li>
+                    </ul>
+
+                  </header>
+                  <section class="panel-content">
+                    <ul class="location-availability-list item-list">
+                      <li class="location-name">
+                        <a href="">Furgeson Building</
+                        strong></a><span class="label success">A1</span>
+                      </li>
+                      <li class="location-name">
+                        <a href="">Davis Armstrong Tower</a> <span class="label success">A1</span>
+                      </li>
+                      <li class="location-name">
+                        <a href="">Transamerica Pyramid</a> <span class="label success">A2</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <footer class="map">
+                    <img src="images/map-placeholder.jpg" alt="">
+                  </footer>
+                </div>
+              </div>
+            </section>
+         </div>
+      </section>
+   </main>
+
+  <div id="edit-dish-status-modal" class="reveal-modal small" data-reveal>
+    <h3>Dish Status</h3>
+    <hr>
+    <div class="content-row">
+      <div class="large-12 columns">
+        <div class="large-2 columns">
+          <label>Active</label>
+        </div>
+        <div class="large-2 columns">
+          <fieldset class="switch status-switch" tabindex="0">
+            <input id="exampleCheckboxSwitch4" checked type="checkbox">
+            <label for="exampleCheckboxSwitch4"></label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="large-12 columns">
+        <br>
+        <a href="#"  class="close-reveal-modal button small expand">Save</a>
+      </div>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="delete-dish-modal" class="reveal-modal small" data-reveal>
+    <h3>Are you sure?</h3>
+    <hr>
+    <div class="content-row">
+      <div class="large-12 columns">
+        <p>This action <b>CANNOT</b> be undone. This will permanently delete the dish entry and it's data.</p>
+        <p>Please type in the name of the dish to confirm.</p>
+      </div>
+      <div class="large-12 columns">
+        <input type="text">
+        <a href="#"  class="close-reveal-modal button small expand">Save</a>
+      </div>
+
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+
+// Dashboard Lists
+// - - - - - - - - -
+
+// Default List
+.item-list {
+    margin:0;
+    position: relative;
+    li {
+        @include clearfix;
+        list-style: none;
+        border-bottom: 1px solid $hr-border-color;
+        padding: rem-calc(12) 0;
+        position: relative;
+    }
+}
+
+// Locations Availability List
+.location-availability-list {
+    li a {
+        font-size: rem-calc(12);
+    }
+    .label {
+        display: inline-block;
+        margin-top: 4px;
+        float: right;
+
+    }
+}
+
+// Order Event History List
+.order-event-history {
+    li {
+        .event-summary,
+        .event-timestamp {
+            margin-top: 4px;
+        }
+        &.event-title {
+            background: $snow;
+            padding:rem-calc(12) 0;
+            font-size: rem-calc(13);
+            &:before {content:none;}
+            .title {
+                font-weight: 800;
+                font-size: rem-calc(12);
+                letter-spacing: 0.02em;
+                @include grid-column($offset:1);
+            }
+        }
+        .event-symbol {
+            @include grid-column(1);
+            [data-icon] {
+                display: inline-block;
+                margin: 2px 0 0;}
+                position: relative;
+                z-index: 1;
+        }
+        .event-summary {
+            @include grid-column(8);
+            font-size: rem-calc(11);
+        }
+        .event-timestamp {
+            @include grid-column(3);
+            font-size: rem-calc(11);
+        }
+        // Line
+        &:before {
+            position: absolute;
+            display: block;
+            z-index: 0;
+            content: '';
+            height: 100%;
+            width: 1px;
+            background: $hr-border-color;
+            left: 22.5px;
+            top:0;
+        }
+    }
+}
+
+// Sort List
+.sortable {
+    .drag-handle {
+        cursor: move;
+        cursor: -webkit-grabbing;
+        margin-right: .5rem;
+        color: $tan;
+        margin-left: 1rem;
+    }
+    .rm-handle {
+        float: right;
+        position: relative;
+        top: 2px;
+        color: $orange;
+        margin-right: 1rem;
+    }
+}

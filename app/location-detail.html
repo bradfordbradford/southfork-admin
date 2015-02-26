@@ -1,0 +1,258 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SouthFork Admin Dashboard</title>
+   <link rel="stylesheet" href="css/app.css">
+   <script src="bower_components/modernizr/modernizr.js"></script>
+   <script src="//use.typekit.net/dmn4svs.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+   <link href="https://fontastic.s3.amazonaws.com/NEQLgq6DtLDXovVKoDNeJY/icons.css" rel="stylesheet">
+</head>
+<body>
+
+   <nav class="top-bar" data-topbar role="navigation">
+     <ul class="title-area">
+       <li class="name">
+         <h1><a href="/"><img src="images/logo.png" alt=""></a></h1>
+       </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+     </ul>
+
+     <section class="top-bar-section">
+       <ul class="right">
+         <li class="has-dropdown">
+           <a href="#">Andy</a>
+           <ul class="dropdown">
+             <li><a href="#">Settings</a></li>
+             <li><a href="#">Driver Portal</a></li>
+             <li class="divider"></li>
+             <li><a href="#">Sign Out</a></li>
+           </ul>
+         </li>
+       </ul>
+     </section>
+   </nav>
+
+   <main class="container">
+      <section id="dashboard-nav" class="large-2 columns">
+         <nav>
+            <ul>
+               <li><a href="/">Orders</a></li>
+               <li class="active"><a href="locations-overview.html">Locations</a></li>
+               <li><h6 class="title">Menu</h6></li>
+               <li><a href="menu-overview.html">Menu</a></li>
+               <li><a href="menu-items-overview.html">Items</a></li>
+               <li><a href="chefs-overview.html">Chefs</a></li>
+               <li><h6 class="title">Content</h6></li>
+               <li><a href="edit-content.html">Home</a></li>
+               <li><a href="edit-content.html">Contact</a></li>
+               <li><a href="edit-content.html">About</a></li>
+               <li><a href="edit-content.html">Legal</a></li>
+               <li><a href="edit-content.html">(etc)</a></li>
+            </ul>
+         </nav>
+      </section>
+
+      <section id="dashboard-main">
+         <div class="large-10 columns">
+
+            <header class="dashboard-header">
+              <h5 class="title">Location</h5>
+              <h6 class="filter">Furgeson Building <small class="detail">Atlanta, Georgia</small></h6>
+              <div class="tags"><span class="label">Active</span></div>
+              <div class="options right">
+                <ul class="button-group">
+                  <li><a href="#" class="button tiny"><span data-icon="a"></span></a></li>
+                  <li><a href="#" class="button tiny"><span data-icon="b"></span></a></li>
+                </ul>
+              </div>
+            </header>
+
+            <section class="dashboard-content">
+              <div class="large-8 columns left-content">
+                <div class="panel">
+                  <header class="panel-header">
+                    <ul class="button-group">
+                      <h6 class="title">Location <div class="options"><a data-reveal-id="edit-location-modal" href="#">Edit</a></div></h6>
+                      <li class="right">
+                        <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="right button info dropdown tiny"><span data-icon="f"></span></button><br>
+                        <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                          <li><a data-reveal-id="edit-location-status-modal"  href="#">Edit Status</a></li>
+                          <li><a data-reveal-id="delete-location-modal" href="#">Delete</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </header>
+                  <section class="panel-content">
+                    <table>
+                      <tbody class="order-totals order-totals-summary">
+                        <tr>
+                          <td colspan="3" class="tr">Zone:</td>
+                          <td class="tr total-col"><div class="label success">A1</div></td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="tr">Address:</td>
+                          <td class="tr total-col">
+                            <p class="address-1">1 Westheimer Road</p>
+                      <p class="address-2">Appt. A</p>
+                      <p class="city">Paris</p>
+                      <p class="zip">79876</p>
+                      <p class="country">United States</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="tr">Orders to Date:</td>
+                          <td class="tr total-col">1217</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="tr"><span class="item-price">Total to Date:</span></td>
+                          <td class="tr"><span class="item-price">$30,003.06</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </section>
+                </div>
+              </div>
+              <div class="large-4 columns right-content">
+                <div class="panel">
+                  <header class="panel-header">
+                    <h6>Location History</h6>
+                  </header>
+                  <section class="panel-content">
+                    <ul class="order-event-history item-list">
+                      <li class="event-title"><div class="title">
+                        February 3, 2015
+                      </div></li>
+                      <li>
+                        <div class="event-symbol"><span class="success-color" data-icon="h"></span></div>
+                        <div class="event-summary">
+                          Location was created
+                        </div>
+                        <div class="event-timestamp">11:15am</div>
+                      </li>
+                      <li>
+                        <div class="event-symbol"><span class="success-color" data-icon="h"></span></div>
+                        <div class="event-summary">Location was made active</div>
+                        <div class="event-timestamp">11:21am</div>
+                      </li>
+
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </section>
+         </div>
+      </section>
+   </main>
+
+
+
+  <div id="edit-location-modal" class="reveal-modal medium" data-reveal>
+    <h3>Location Details</h3>
+    <hr>
+    <div class="content-row">
+      <form action="" class="form ">
+        <div class="row">
+          <div class="large-12 columns">
+            <h6>Building General Info</h6>
+            <input type="text" placeholder="Building Name">
+            <input type="text" placeholder="Building Zone">
+          </div>
+          <div class="large-12 columns">
+            <hr>
+            <h6>Building Address</h6>
+          </div>
+          <div class="large-12 columns">
+            <input type="text" placeholder="Street Address">
+          </div>
+          <div class="large-12 columns">
+            <input type="text" placeholder="Apartment or Suite">
+          </div>
+          <div class="large-6 columns">
+            <input type="text" placeholder="City">
+          </div>
+          <div class="large-6 columns">
+            <select>
+              <option value="husker">Georgia</option>
+              <option value="starbuck">And that's it!</option>
+              <option value="hotdog">How about Oregon?</option>
+              <option value="apollo">Nope.</option>
+            </select>
+          </div>
+          <div class="large-6 columns">
+            <input type="text" placeholder="Zip/Postal">
+          </div>
+          <div class="large-6 columns">
+            <select>
+              <option value="husker">USA</option>
+              <option value="starbuck">And that's it!</option>
+              <option value="hotdog">How about Italy?</option>
+              <option value="apollo">Nope.</option>
+            </select>
+          </label>
+          </div>
+          <div class="large-6 columns">
+            <input type="text" placeholder="Latitude">
+          </div>
+          <div class="large-6 columns">
+            <input type="text" placeholder="Longitude">
+          </div>
+          <div class="large-12 columns">
+            <a href="#"  class="close-reveal-modal button small">Save</a>
+          </div>
+      </form>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="edit-location-status-modal" class="reveal-modal small" data-reveal>
+    <h3>Location Status</h3>
+    <hr>
+    <div class="content-row">
+      <div class="large-12 columns">
+        <div class="large-2 columns">
+          <label>Active</label>
+        </div>
+        <div class="large-2 columns">
+          <fieldset class="switch status-switch" tabindex="0">
+            <input id="exampleCheckboxSwitch4" checked type="checkbox">
+            <label for="exampleCheckboxSwitch4"></label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="large-12 columns">
+        <br>
+        <a href="#"  class="close-reveal-modal button small expand">Save</a>
+      </div>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="delete-location-modal" class="reveal-modal small" data-reveal>
+    <h3>Are you sure?</h3>
+    <hr>
+    <div class="content-row">
+      <div class="large-12 columns">
+        <p>This action CANNOT be undone. This will permanently delete the location entry and it's history.</p>
+        <p>Please type in the name of the location to confirm.</p>
+      </div>
+      <div class="large-12 columns">
+        <input type="text">
+        <a href="#"  class="close-reveal-modal button small expand">Save</a>
+      </div>
+
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

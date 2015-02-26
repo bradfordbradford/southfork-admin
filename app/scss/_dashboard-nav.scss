@@ -1,0 +1,42 @@
+// Admin Main Nav
+// - - - - - - - - -
+
+$admin-main-nav-top-padding: rem-calc(24);
+$admin-main-nav-font-size: rem-calc(14);
+$admin-main-nav-line-height: rem-calc(14);
+$admin-main-nav-color: $charcoal;
+$admin-main-nav-color-hover: $orange;
+$admin-main-nav-section-header: lighten($light-brown, 10);
+
+#dashboard-nav {
+    padding-top: $admin-main-nav-top-padding;
+
+    ul {
+        li {
+            list-style: none;
+            line-height: $admin-main-nav-line-height;
+
+            a {
+                font-size: $admin-main-nav-font-size;
+                line-height: $list-line-height;
+                color: $admin-main-nav-color;
+                &:hover {
+                    color:$admin-main-nav-color-hover;
+                }
+            }
+            // Title
+            .title {
+                margin-top: rem-calc(24);
+                color: $admin-main-nav-section-header;
+                text-transform: uppercase;
+                letter-spacing: .04em;
+                font-weight: 600;
+                font-size: rem-calc(10);
+            }
+            // Active
+            &.active {
+                a {color: $orange;}
+            }
+        }
+    }
+}

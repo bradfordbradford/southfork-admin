@@ -1,0 +1,27 @@
+// Utilities
+// - - - - - - - -
+
+// Ghost Center
+.ghost-center {position: relative;}
+.ghost-content {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+
+// Colors
+.moss-color, .success-color {color: $moss;}
+.orange-color, .alert-color {color: $orange;}
+
+
+// Content Row/Clearfix
+.content-row {
+    @include clearfix;
+}
+
+// Round
+.round {
+    border-radius:1000px;
+}

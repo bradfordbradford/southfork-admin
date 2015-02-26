@@ -1,0 +1,295 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SouthFork Admin Dashboard</title>
+   <link rel="stylesheet" href="css/app.css">
+   <script src="bower_components/modernizr/modernizr.js"></script>
+   <script src="//use.typekit.net/dmn4svs.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+   <link href="https://fontastic.s3.amazonaws.com/NEQLgq6DtLDXovVKoDNeJY/icons.css" rel="stylesheet">
+</head>
+<body>
+
+   <nav class="top-bar" data-topbar role="navigation">
+     <ul class="title-area">
+       <li class="name">
+         <h1><a href="/"><img src="images/logo.png" alt=""></a></h1>
+       </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+     </ul>
+
+     <section class="top-bar-section">
+       <ul class="right">
+         <li class="has-dropdown">
+           <a href="#">Andy</a>
+           <ul class="dropdown">
+             <li><a href="#">Settings</a></li>
+             <li><a href="#">Driver Portal</a></li>
+             <li class="divider"></li>
+             <li><a href="#">Sign Out</a></li>
+           </ul>
+         </li>
+       </ul>
+     </section>
+   </nav>
+
+   <main class="container">
+      <section id="dashboard-nav" class="large-2 columns">
+         <nav>
+            <ul>
+               <li class="active"><a href="/">Orders</a></li>
+               <li><a href="locations-overview.html">Locations</a></li>
+               <li><h6 class="title">Menu</h6></li>
+               <li><a href="menu-overview.html">Menus</a></li>
+               <li><a href="menu-items-overview.html">Dishes</a></li>
+               <li><a href="chefs-overview.html">Chefs</a></li>
+               <li><h6 class="title">Content</h6></li>
+               <li><a href="edit-content.html">Home</a></li>
+               <li><a href="edit-content.html">Contact</a></li>
+               <li><a href="edit-content.html">About</a></li>
+               <li><a href="edit-content.html">Legal</a></li>
+               <li><a href="edit-content.html">(etc)</a></li>
+            </ul>
+         </nav>
+      </section>
+
+      <section id="dashboard-main">
+         <div class="large-10 columns">
+
+            <header class="dashboard-header">
+              <h5 class="title">Orders</h5>
+              <h6 class="filter">#1989 <small class="detail">Today @ 11:32am</small></h6>
+              <div class="tags"><span class="label">Pending</span></div>
+              <div class="options right">
+                <ul class="button-group">
+                  <li><a href="#" class="button tiny"><span data-icon="a"></span></a></li>
+                  <li><a href="#" class="button tiny"><span data-icon="b"></span></a></li>
+                </ul>
+              </div>
+            </header>
+
+            <section class="dashboard-content">
+              <div class="large-8 columns left-content">
+                <div class="panel">
+                  <header class="panel-header">
+                    <ul class="button-group">
+                      <li><a href="#" class="button tiny info">Fulfill</a></li>
+                      <li><a href="#" class="button tiny info">Refund</a></li>
+                      <li class="right">
+                        <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="right button info dropdown tiny"><span data-icon="f"></span></button><br>
+                        <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                          <li><a href="#">Archive</a></li>
+                          <li><a href="#">Cancel Order</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </header>
+                  <section class="panel-content">
+                    <table class="order-summary">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p><a href="#">Pan Roasted Chicken Breast - Summary</a></p>
+                            <p>Ferguson Building</p>
+                            <p>#103</p>
+                          </td>
+                          <td class="text-right">1 @ $27.50</td>
+                          <td class="text-right">$27.50</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table>
+                      <tbody class="order-totals order-totals-summary">
+                        <tr>
+                          <td colspan="3" class="tr">Subtotal:</td>
+                          <td class="tr total-col">$27.50</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="tr">GA State Tax 6.25%:</td>
+                          <td class="tr total-col">$4.06</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="tr">Atlanta Municipal Tax 2%:</td>
+                          <td class="tr total-col">$1.50</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="tl">
+                          </td>
+                          <td class="tr"><span class="item-price">Total:</span></td>
+                          <td class="tr"><span class="item-price">$33.06</span></td>
+                        </tr>
+                      </tbody>
+                      <tbody class="order-transactions">
+                        <tr>
+                          <td colspan="2" class="tl order-transaction-details-cell">
+                            <div class="order-transaction-details">
+                              <p>
+                                <span class="cc-number">
+                                  •••• •••• •••• 0270
+                                </span>
+                              </p>
+                            </div>
+                          </td>
+                          <td class="tr">Payment:</td>
+                          <td class="tr">$33.06</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </section>
+                </div>
+                <div class="panel">
+                  <header class="panel-header">
+                    <h6>Order History</h6>
+                  </header>
+                  <section class="panel-content">
+                    <ul class="order-event-history item-list">
+                      <li class="event-title"><div class="title">
+                        February 3, 2015
+                      </div></li>
+                      <li>
+                        <div class="event-symbol"><span class="alert-color" data-icon="j"></span></div>
+                        <div class="event-summary">
+                          Order confirmation text was sent to the customer  <a href="#">Resend Text</a>
+                        </div>
+                        <div class="event-timestamp">11:15am</div>
+                      </li>
+                      <li>
+                        <div class="event-symbol"><span class="success-color" data-icon="h"></span></div>
+                        <div class="event-summary">Driver picked up order</div>
+                        <div class="event-timestamp">11:21am</div>
+                      </li>
+
+                    </ul>
+                  </section>
+                </div>
+              </div>
+              <div class="large-4 columns right-content">
+                <div class="panel">
+                  <header class="panel-header">
+                    <h6 class="title">Customer Details</h6>
+                    <ul class="button-group options">
+                      <li class="right"><a href="#" data-reveal-id="customer-details-modal" class="button info tiny"><span data-icon="g"></span></a></li>
+                    </ul>
+
+                  </header>
+                  <section class="panel-content">
+                    <div class="address">
+                      <p class="customer-name"><strong>Jane Berkin</strong></p>
+                      <p class="address-1">1 Westheimer Road</p>
+                      <p class="address-2">Appt. A</p>
+                      <p class="city">Paris</p>
+                      <p class="zip">79876</p>
+                      <p class="country">United States</p>
+                    </div>
+                    <hr>
+                    <div class="contact">
+                      <p class="customer-phone"><a href="">123-456-7899</a></p>
+                      <a href="" class="customer-email">jane@gmail.com</a>
+                    </div>
+                  </section>
+                  <footer class="map">
+                    <img src="images/map-placeholder.jpg" alt="">
+                  </footer>
+                </div>
+              </div>
+            </section>
+         </div>
+      </section>
+   </main>
+
+
+
+<div id="customer-details-modal" class="reveal-modal medium" data-reveal>
+  <h2>Customer Details</h2>
+  <hr>
+  <form class="">
+     <div class="row">
+        <div class="large-6 columns">
+          <label for="">First Name
+            <input type="text" placeholder="First Name">
+          </label>
+        </div>
+        <div class="large-6 columns">
+         <label for="">Last Name
+            <input type="text" placeholder="Last Name">
+         </label>
+        </div>
+     </div>
+     <div class="row">
+        <div class="large-6 columns">
+          <label for="">Email
+            <input type="text" placeholder="Email">
+          </label>
+        </div>
+        <div class="large-6 columns">
+         <label for="">Phone
+            <input type="text" placeholder="Phone">
+         </label>
+        </div>
+     </div>
+     <div class="row">
+        <div class="large-12 columns">
+         <label for="">Address 1
+          <input type="text" placeholder="">
+         </label>
+        </div>
+     </div>
+     <div class="row">
+        <div class="large-12 columns">
+         <label for="">Address 2
+          <input type="text" placeholder="">
+         </label>
+        </div>
+     </div>
+     <div class="row">
+        <div class="large-6 columns">
+          <label for="">City
+            <input type="text" placeholder="City">
+          </label>
+        </div>
+        <div class="large-6 columns">
+         <label for="">Zip/Postal
+            <input type="text" placeholder="Zip/Postal">
+         </label>
+        </div>
+     </div>
+     <div class="row">
+        <div class="large-6 columns">
+          <label for="">Country
+            <select>
+              <option value="husker">USA</option>
+              <option value="starbuck">And that's it!</option>
+              <option value="hotdog">How about Italy?</option>
+              <option value="apollo">Nope.</option>
+            </select>
+          </label>
+        </div>
+        <div class="large-6 columns">
+         <label for="">State
+            <select>
+              <option value="husker">Georgia</option>
+              <option value="starbuck">And that's it!</option>
+              <option value="hotdog">How about Oregon?</option>
+              <option value="apollo">Nope.</option>
+            </select>
+          </label>
+        </div>
+     </div>
+  </form>
+  <div class="row">
+    <a href="#"  class="close-reveal-modal button small">Save</a>
+  </div>
+  <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

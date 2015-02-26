@@ -1,0 +1,250 @@
+// Dashboard Main
+// - - - - - - - - -
+$dashboard-padding: rem-calc(16);
+
+#dashboard-main {
+    padding-top: $dashboard-padding;
+
+    // Header
+    .dashboard-header {
+        @include clearfix();
+        padding-bottom: $dashboard-padding / 1.25;
+        border-bottom: 1px solid $hr-border-color;
+
+        .title, .filter, .tags {
+            float:left;
+        }
+        // Title
+        .title {
+            margin: 6px $dashboard-padding 0 0;
+        }
+        // Tags
+        .tags {padding-left: $dashboard-padding;
+            .label {margin-top: rem-calc(11);}}
+        // Filter
+        .filter {
+            border-left: 1px solid $hr-border-color;
+            padding-left: $dashboard-padding;
+            &.table-tools {
+                // @include grid-column(6);
+                a.button, .dropdown-wrap {
+                    display: inline-block;
+                    position: relative;
+                    top: 4px;
+                }
+                a.button {margin-right: rem-calc(4);}
+            }
+            &.no-border {
+                border-left:0px;
+                .button {
+                    display: inline-block;
+                    position: relative;
+                    top: 4px;
+                }
+            }
+        }
+        h6.filter {
+            margin-top: 8px
+        }
+        .detail {
+            display: inline-block;
+            margin-left: $dashboard-padding;
+        }
+        // Button Group
+        .button-group {
+            .button {
+                padding: 6px;
+            }
+            [data-icon]:before {
+                font-size: rem-calc(24);
+            }
+        }
+
+    }
+
+    // Content
+    .dashboard-content {
+        padding-top: $dashboard-padding;
+
+        // Remove Side Padding
+        .left-content {padding-left:0;}
+        .right-content {padding-right:0;}
+
+        // Tabs
+        .tabs {
+            background: $tabs-navigation-bg-color;
+        }
+        // Table
+        table {
+            width:100%;
+            // Checkboxes
+            input[type='checkbox'] {
+                margin: 0;
+            }
+            th {position: relative;}
+            // Archived
+            tr.inactive {
+                td { opacity: .5; }
+            }
+            td:last-child, th:last-child {text-align: right; border-right: 1px solid $silver;}
+
+            // Alerts in Rows
+            .badge[data-icon] {
+
+                position: relative;
+                top: 1px;
+                font-size: 1rem;
+                float: right;
+                &.alert {
+                    color:$alert-color;
+                }
+                &.success {
+                    color:$success-color;
+                }
+                &.info {
+                    color:$info-color;
+                }
+            }
+        }
+
+        // Table Bulk Controls
+        .tr-bulk-edit {
+            padding: 0 1rem;
+        }
+        .bulk-edit-orders {
+            // position: absolute;
+            float: left !important;
+            position: relative;
+            margin:0;
+            padding: .625rem .6rem;
+            &:after {display: none;}
+        }
+
+
+
+        // Table Pagination
+        ul.pagination {
+            @include grid-column(6);
+            li {
+                display: inline-block;
+                float: none;
+            }
+        }
+
+        // Table Summary
+        .table-summary {
+            @include grid-column(6);
+            small {
+                color: $silver;
+            }
+        }
+
+        // Table Filters
+        .table-search {
+            padding-left: 0;
+            .row {margin:0;max-width: 100%;}
+            .columns {
+                padding-left: 0;
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+            .clear-filter {
+                height:3.125rem;
+                &:after {
+                    font-size: 20px;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+
+
+        // Table Options
+        .table-options {
+            padding-right: 0;
+        }
+
+        // Panel Header
+        .panel-header {
+            .title, .options {
+                display: inline-block;
+                margin: auto;
+            }
+            .title .options {
+                border-left: 1px solid $primary-color;
+                padding-left: $dashboard-padding;
+                margin-left: $dashboard-padding;
+            }
+            .options {
+                float: right;
+            }
+        }
+
+        // Panel Content
+        .panel-content {
+            // Table
+            p {
+                font-size: rem-calc(14);
+                line-height: rem-calc(14);
+                margin-bottom: rem-calc(12);
+            }
+            .order-summary {
+                border-bottom: 0px;
+                margin-bottom: 0px;
+                tr td {
+                    padding-top: rem-calc(24);
+                }
+                td, tr {
+                    border:0px;
+                }
+            }
+        }
+
+        // Panel Tabs
+        .panel-tabs {
+            border: 1px solid $hr-border-color;
+            .tabs {
+                border-bottom: 1px solid $hr-border-color;
+            }
+            .panel-tabs-header {
+                padding: rem-calc(16) 0 rem-calc(24);
+                .title, .edit {
+                    float:left;
+                }
+                .title {
+                    margin-right: $dashboard-padding;
+                }
+                .edit {
+                    border-left: 1px solid $hr-border-color;
+                    padding-left: $dashboard-padding;
+                }
+            }
+        }
+
+        // Table - no borders
+        table.no-borders {
+            tr, td {
+                border: 0px;
+            }
+        }
+
+        // Table - Footer & Pagination
+        tfoot .pagination {
+            ul {
+                margin-bottom: 0;
+                text-align: center;
+                li {
+                    float: none;
+                    display: inline-block;
+                }
+            }
+        }
+
+
+        // Map
+        .map img {width: 100%;}
+
+
+    }
+}

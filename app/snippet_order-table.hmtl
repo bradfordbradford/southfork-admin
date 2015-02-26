@@ -1,0 +1,79 @@
+<table class="table-checks toggle-all-checkboxes-wrap">
+                      <thead>
+                        <tr>
+                          <th width="10">
+                            <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="bulk-edit-orders right button info dropdown tiny"><span data-icon="f"></span></button><br>
+                            <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                              <li><a href="#">Fulfill Orders</a></li>
+                              <li><a href="#">Edit Status</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Archive Orders</a></li>
+                              <li><a href="#">Unarchive Orders</a></li>
+                            </ul>
+                          </th>
+                          <th width="100">Order #</th>
+                          <th width="100">Placed</th>
+                          <th width="100">Zone</th>
+                          <th width="200">User</th>
+                          <th width="100">Fulfillment Status</th>
+                          <th width="150">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="order-detail.html"># 1989
+                            <span data-tooltip aria-haspopup="true" class="has-tip badge alert" title="This order may be fraudulent" data-icon="i"></span></a></td>
+                          <td>11:22am</td>
+                          <td><span class="label success">A1</span></td>
+                          <td>Jane Berkin</td>
+                          <td><span class="label">Unfulfilled</span></td>
+                          <td>$23.50</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="order-detail.html"># 1989</a></td>
+                          <td>1:30pm</td>
+                          <td><span class="label alert">B1</span></td>
+                          <td>Andre Shultz</td>
+                          <td><span class="label info">Pending</span></td>
+                          <td>$23.50</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="order-detail.html"># 1989</a></td>
+                          <td>19:14am</td>
+                          <td><span class="label success">A1</span></td>
+                          <td>Sergio Hoplin</td>
+                          <td><span class="label info">Pending</span></td>
+                          <td>$23.50</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="order-detail.html"># 1989</a></td>
+                          <td>12:12pm</td>
+                          <td><span class="label alert">B1</span></td>
+                          <td>Amelia Earhart</td>
+                          <td><span class="label warning">Canceled</span></td>
+                          <td>$23.50</td>
+                        </tr>
+                        <tr class="inactive">
+                          <td><input type="checkbox"></td>
+                          <td><a href="order-detail.html"># 1989</a></td>
+                          <td>12:45pm</td>
+                          <td><span class="label success">A2</span></td>
+                          <td>Thomas Edison</td>
+                          <td><span class="success label">Fulfilled</span></td>
+                          <td>$23.50</td>
+                        </tr>
+                        <tr class="inactive">
+                          <td><input type="checkbox"></td>
+                          <td><a href="order-detail.html"># 1988</a></td>
+                          <td>11:22am</td>
+                          <td><span class="label success">A1</span></td>
+                          <td>Charlotte Gainsbourg</td>
+                          <td><span class="success label">Fulfilled</span></td>
+                          <td>$34.12</td>
+                        </tr>
+                      </tbody>
+                    </table>

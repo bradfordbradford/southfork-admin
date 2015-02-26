@@ -1,0 +1,235 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SouthFork Admin Dashboard</title>
+   <link rel="stylesheet" href="css/app.css">
+   <script src="bower_components/modernizr/modernizr.js"></script>
+   <script src="//use.typekit.net/dmn4svs.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+   <link href="https://fontastic.s3.amazonaws.com/NEQLgq6DtLDXovVKoDNeJY/icons.css" rel="stylesheet">
+</head>
+<body>
+
+   <nav class="top-bar" data-topbar role="navigation">
+     <ul class="title-area">
+       <li class="name">
+         <h1><a href="/"><img src="images/logo.png" alt=""></a></h1>
+       </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+     </ul>
+
+     <section class="top-bar-section">
+       <ul class="right">
+         <li class="has-dropdown">
+           <a href="#">Andy</a>
+           <ul class="dropdown">
+             <li><a href="#">Settings</a></li>
+             <li><a href="#">Driver Portal</a></li>
+             <li class="divider"></li>
+             <li><a href="#">Sign Out</a></li>
+           </ul>
+         </li>
+       </ul>
+     </section>
+   </nav>
+
+   <main class="container">
+      <section id="dashboard-nav" class="large-2 columns">
+         <nav>
+            <ul>
+               <li><a href="/">Orders</a></li>
+               <li><a href="locations-overview.html">Locations</a></li>
+               <li><h6 class="title">Menu</h6></li>
+               <li><a href="menu-overview.html">Menus</a></li>
+               <li><a href="menu-items-overview.html">Dishes</a></li>
+               <li class="active"><a href="chefs-overview.html">Chefs</a></li>
+               <li><h6 class="title">Content</h6></li>
+               <li><a href="edit-content.html">Home</a></li>
+               <li><a href="edit-content.html">Contact</a></li>
+               <li><a href="edit-content.html">About</a></li>
+               <li><a href="edit-content.html">Legal</a></li>
+               <li><a href="edit-content.html">(etc)</a></li>
+            </ul>
+         </nav>
+      </section>
+
+      <section id="dashboard-main">
+         <div class="large-10 columns">
+
+            <header class="dashboard-header">
+              <h5 class="title">Chefs</h5>
+              <div class="filter table-tools ">
+                <a href="" class="left clear-filter tiny info button">All</a>
+                <a href="" class="left tiny info button filter-by-attr" data-filter="Active">Active</a>
+                <a href="" class="left tiny info button filter-by-attr" data-filter="Pending">Pending</a>
+                <a data-reveal-id="add-chef-modal" href="#" class="button tiny right"><span data-icon="k"></span></a>
+              </div>
+            </header>
+
+            <section class="dashboard-content">
+
+              <div class="content-row">
+                <div class="table-search">
+                  <form action="" class="form ">
+                    <div class="row">
+                      <div class="large-11 columns"><input id="filter" type="text"/></div>
+                      <div class="large-1 columns"><a href="#clear" class="clear-filter button expand info" title="clear filter"><span data-icon="n"></span></a></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="content-row">
+                <table class="table" data-filter="#filter" data-filter-text-only="true" data-page-size="8">
+                  <thead>
+                    <tr>
+                      <th data-toggle="true">Chef Name</th>
+                      <th data-hide="all">Bio</th>
+                      <th>Location</th>
+                      <th>Status</th>
+                      <th>Featured</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="active">
+                      <td>
+                        <a href="chef-detail.html">Louis Armstrong</a>
+                      </td>
+                      <td>
+                        Growing up, he enjoyed cooking at home and always tended to a large garden. Jamie found his home in Atlanta at Common Stock, his first solo venture, which he opened at the age of 31.
+                      </td>
+                      <td>Atlanta, Georgia</td>
+                      <td><div class="label success">Active</div></td>
+                      <td><span class="badge success" data-icon="h"></span></a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="chef-detail.html">Sydney Bechet</a></td>
+                      <td>
+                        On second thoughts, let's not go there. It is a silly place. Burn her! And this isn't my nose. This is a false one. What a strange person. Yes, yes. A bit. But she's got a wart. Bring her forward!
+                      </td>
+                      <td>Dallas, Texas</td>
+                      <td><div class="label success">Active</div></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><a href="chef-detail.html">Ella Fitzgerald</a></td>
+                      <td>
+                        The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land.
+                      </td>
+                      <td>Dallas, Texas</td>
+                      <td><div class="label success">Active</div></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                        <td colspan="11">
+                          <div class="pagination"></div>
+                        </td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </section>
+         </div>
+      </section>
+   </main>
+
+  <div id="add-chef-modal" class="reveal-modal medium" data-reveal>
+      <h3>Create New Profile</h3>
+      <hr>
+      <div class="content-row">
+        <form action="" class="form ">
+          <div class="row">
+
+            <div class="large-12 columns">
+              <h6>Profile General Info</h6>
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="First Name">
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="Last Name">
+            </div>
+            <div class="large-12 columns">
+              <select>
+                <option value="husker">Atlanta, Georgia</option>
+                <option value="starbuck">Dallas, Texas</option>
+              </select>
+            </div>
+            <div class="large-12 columns">
+              <hr>
+              <h6>Profile Details</h6>
+            </div>
+            <div class="large-12 columns">
+              <a href="#" class="small info button expand right">Upload Profile Pic</a>
+            </div>
+            <div class="large-12 columns">
+              <textarea name="" id="" placeholder="Bio" cols="30" rows="10"></textarea>
+            </div>
+            <div class="large-6 columns">
+              <div class="large-2 columns">
+                <label>Active</label>
+              </div>
+              <div class="large-2 columns">
+                <fieldset class="switch status-switch" tabindex="0">
+                  <input id="exampleCheckboxSwitch4" checked type="checkbox">
+                  <label for="exampleCheckboxSwitch4"></label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="large-6 columns">
+              <div class="large-2 columns">
+                <label>Featured</label>
+              </div>
+              <div class="large-2 columns">
+                <fieldset class="switch status-switch" tabindex="1">
+                  <input id="exampleCheckboxSwitch4" type="checkbox">
+                  <label for="exampleCheckboxSwitch4"></label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="large-12 columns">
+              <br>
+              <a href="#"  class="close-reveal-modal button small">Save</a>
+            </div>
+        </form>
+      </div>
+      <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/libs/footable.js"></script>
+<script src="js/libs/footable.paginate.js"></script>
+<script src="js/libs/footable.filter.js"></script>
+<script src="js/libs/footable.sort.js"></script>
+<script src="js/libs/footable.striping.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/js/select2.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+// FooTable
+// ----------------------------
+$(function () {
+  $('table').footable();
+  // Clear
+  $('.clear-filter').click(function (e) {
+    e.preventDefault();
+    $('table').trigger('footable_clear_filter');
+  });
+  // Show Attr
+  $('.filter-by-attr').click(function (e) {
+    e.preventDefault();
+    var day_filter_attr = $(this).attr("data-filter");
+    var footableFilter = $('table').data('footable-filter');
+    footableFilter.filter(day_filter_attr);
+  });
+
+
+});
+</script>
+</body>
+</html>

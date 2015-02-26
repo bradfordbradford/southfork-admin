@@ -1,0 +1,242 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SouthFork Admin Dashboard</title>
+   <link rel="stylesheet" href="css/app.css">
+   <script src="bower_components/modernizr/modernizr.js"></script>
+   <script src="//use.typekit.net/dmn4svs.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+   <link href="https://fontastic.s3.amazonaws.com/NEQLgq6DtLDXovVKoDNeJY/icons.css" rel="stylesheet">
+</head>
+<body>
+
+   <nav class="top-bar" data-topbar role="navigation">
+     <ul class="title-area">
+       <li class="name">
+         <h1><a href="/"><img src="images/logo.png" alt=""></a></h1>
+       </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+     </ul>
+
+     <section class="top-bar-section">
+       <ul class="right">
+         <li class="has-dropdown">
+           <a href="#">Andy</a>
+           <ul class="dropdown">
+             <li><a href="#">Settings</a></li>
+             <li><a href="#">Driver Portal</a></li>
+             <li class="divider"></li>
+             <li><a href="#">Sign Out</a></li>
+           </ul>
+         </li>
+       </ul>
+     </section>
+   </nav>
+
+   <main class="container">
+      <section id="dashboard-nav" class="large-2 columns">
+         <nav>
+            <ul>
+               <li><a href="/">Orders</a></li>
+               <li class="active"><a href="locations-overview.html">Locations</a></li>
+               <li><h6 class="title">Menu</h6></li>
+               <li><a href="menu-overview.html">Menu</a></li>
+               <li><a href="menu-items-overview.html">Items</a></li>
+               <li><a href="chefs-overview.html">Chefs</a></li>
+               <li><h6 class="title">Content</h6></li>
+               <li><a href="edit-content.html">Home</a></li>
+               <li><a href="edit-content.html">Contact</a></li>
+               <li><a href="edit-content.html">About</a></li>
+               <li><a href="edit-content.html">Legal</a></li>
+               <li><a href="edit-content.html">(etc)</a></li>
+            </ul>
+         </nav>
+      </section>
+
+      <section id="dashboard-main">
+         <div class="large-10 columns">
+
+            <header class="dashboard-header">
+              <h5 class="title">Locations</h5>
+              <div class="filter table-tools ">
+                <a href="" class="left clear-filter tiny info button">All</a>
+                <a href="" class="left tiny info button filter-by-attr" data-filter="Active">Active</a>
+                <a href="" class="left tiny info button filter-by-attr" data-filter="Pending">Pending</a>
+                <a data-reveal-id="add-location-zone-modal" href="#" class="button tiny right"><span data-icon="k"></span></a>
+              </div>
+            </header>
+
+            <section class="dashboard-content">
+              <div class="content-row">
+                <div class="table-search">
+                  <form action="" class="form ">
+                    <div class="row">
+                      <div class="large-11 columns"><input id="filter" type="text"/></div>
+                      <div class="large-1 columns"><a href="#clear" class="clear-filter button expand info" title="clear filter"><span data-icon="n"></span></a></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="content-row">
+                <table class="table" data-filter="#filter" data-filter-text-only="true" data-page-size="8">
+                  <thead>
+                    <tr>
+                      <th data-toggle="true">Building</th>
+                      <th data-hide="all">Orders to Date</th>
+                      <th data-hide="all">Total to Date</th>
+                      <th>Address</th>
+                      <th width="150">Zone</th>
+                      <th width="150">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="location-detail.html">Furgeson Building</a></td>
+                      <td>510</td>
+                      <td>$10,000</td>
+                      <td>880 San Francisco Ave, San Francisco 79416 USA</td>
+                      <td><div class="label success">A1</div></td>
+                      <td><div class="label info">Pending</div></td>
+                    </tr>
+                    <tr>
+                      <td><a href="location-detail.html">Jefferson Tower</a></td>
+                      <td>814</td>
+                      <td>$15,500</td>
+                      <td>104 Jefferson Blvd. Dallas 75201 TX</td>
+                      <td><div class="label success">A1</div></td>
+                      <td><div class="label success">Active</div></td>
+                    </tr>
+                    <tr>
+                      <td><a href="location-detail.html">Transamerica Pyramid</a></td>
+                      <td>1,215</td>
+                      <td>$24,800</td>
+                      <td>1 Geary Ave, San Francisco 79876 USA</td>
+                      <td><div class="label info">A2</div></td>
+                      <td><div class="label success">Active</div></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                        <td colspan="11">
+                          <div class="pagination"></div>
+                        </td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- <footer class="table-footer">
+                <ul class="pagination">
+                  <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                  <li class="current"><a href="">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><a href="">4</a></li>
+                  <li class="unavailable"><a href="">&hellip;</a></li>
+                  <li><a href="">12</a></li>
+                  <li><a href="">13</a></li>
+                  <li class="arrow"><a href="">&raquo;</a></li>
+                </ul>
+                <div class="table-summary text-right">
+                  <small>1-25 of 100</small>
+                </div>
+              </footer> -->
+            </section>
+         </div>
+      </section>
+   </main>
+
+   <div id="add-location-zone-modal" class="reveal-modal medium" data-reveal>
+      <h3>Create New Location</h3>
+      <hr>
+      <div class="content-row">
+        <form action="" class="form ">
+          <div class="row">
+
+            <div class="large-12 columns">
+              <h6>Building General Info</h6>
+              <input type="text" placeholder="Building Name">
+              <input type="text" placeholder="Building Zone">
+            </div>
+            <div class="large-12 columns">
+              <hr>
+              <h6>Building Address</h6>
+            </div>
+            <div class="large-12 columns">
+              <input type="text" placeholder="Street Address">
+            </div>
+            <div class="large-12 columns">
+              <input type="text" placeholder="Apartment or Suite">
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="City">
+            </div>
+            <div class="large-6 columns">
+              <select>
+                <option value="husker">Georgia</option>
+                <option value="starbuck">And that's it!</option>
+                <option value="hotdog">How about Oregon?</option>
+                <option value="apollo">Nope.</option>
+              </select>
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="Zip/Postal">
+            </div>
+            <div class="large-6 columns">
+              <select>
+                <option value="husker">USA</option>
+                <option value="starbuck">And that's it!</option>
+                <option value="hotdog">How about Italy?</option>
+                <option value="apollo">Nope.</option>
+              </select>
+            </label>
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="Latitude">
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="Longitude">
+            </div>
+            <div class="large-12 columns">
+              <a href="#"  class="close-reveal-modal button small">Save</a>
+            </div>
+        </form>
+      </div>
+      <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+    </div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/libs/footable.js"></script>
+<script src="js/libs/footable.paginate.js"></script>
+<script src="js/libs/footable.filter.js"></script>
+<script src="js/libs/footable.sort.js"></script>
+<script src="js/libs/footable.striping.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/js/select2.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+// FooTable
+// ----------------------------
+$(function () {
+  $('table').footable();
+  // Clear
+  $('.clear-filter').click(function (e) {
+    e.preventDefault();
+    $('table').trigger('footable_clear_filter');
+  });
+  // Show Attr
+  $('.filter-by-attr').click(function (e) {
+    e.preventDefault();
+    var day_filter_attr = $(this).attr("data-filter");
+    var footableFilter = $('table').data('footable-filter');
+    footableFilter.filter(day_filter_attr);
+  });
+
+
+});
+</script>
+</body>
+</html>
