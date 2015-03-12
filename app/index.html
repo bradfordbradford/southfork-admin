@@ -44,8 +44,8 @@
                <li><a href="locations-overview.html">Locations</a></li>
                <li><h6 class="title">Menu</h6></li>
                <li><a href="menu-overview.html">Menus</a></li>
-               <li><a href="menu-item-overview.html">Dishes</a></li>
-               <li><a href="chefs-overview.html">Chefs</a></li>
+               <li><a href="menu-items-overview.html">Dishes</a></li>
+               <li><a href="partner-overview.html">Partners</a></li>
                <li><h6 class="title">Content</h6></li>
                <li><a href="edit-content.html">Home</a></li>
                <li><a href="edit-content.html">Contact</a></li>
@@ -58,6 +58,34 @@
 
       <section id="dashboard-main">
          <div class="large-10 columns">
+
+            <!-- <div class="heads-up">
+              <div class="menu-detail-nutrition-cards" data-equalizer>
+                <div class="card" >
+                  <div class="inner" data-equalizer-watch>
+                    <h4>19</h4>
+                    <span>orders <b>pending</b></span>
+                  </div>
+                </div>
+                <div class="card" >
+                  <div class="inner" data-equalizer-watch>
+                    <h4>439</h4>
+                    <span>orders <b>filled</b></span>
+                  </div>
+                </div>
+                <div class="card" >
+                  <div class="inner" data-equalizer-watch>
+                    <h4>738</h4>
+                    <span>dishes</span>
+                  </div>
+                </div>
+                <div class="card single-line">
+                  <div class="inner" data-equalizer-watch>
+                    <a data-reveal-id="show-details-reveal" href="#">Orders Overview</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
 
             <header class="dashboard-header">
               <h5 class="title">Orders</h5>
@@ -94,6 +122,13 @@
                     <li><a href="#" class="filter-by-attr" data-filter="Chrysler Building">Chrysler Building</a></li>
                   </ul>
                 </div>
+              </div>
+              <div class="options table-tools ">
+                <a data-reveal-id="create-new-order-modal" href="#" class="button small right"> <span class="on-left icon" data-icon="k"></span> Create Order</a>
+
+                <a data-reveal-id="show-details-reveal" href="#" class="button small right secondary"> <span class="on-left icon" data-icon="o"></span>  Orders Overview</a>
+
+
               </div>
             </header>
 
@@ -285,6 +320,151 @@
       </section>
    </main>
 
+   <div id="create-new-order-modal" class="reveal-modal medium" data-reveal>
+    <h3>Create New Order</h3>
+    <hr>
+    <div class="content-row">
+      <form action="" class="">
+        <div class="add-remove-form-fields">
+          <div class="row">
+            <div class="large-12 columns">
+              <select class="special-select">
+                <option value="">Location 1</option>
+                <option value="">Location 2</option>
+                <option value="">Location 3</option>
+                <option value="">Location 4</option>
+                <option value="">Location (etc)</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <select class="special-select">
+                <option value="">Blue Kale Studio Salad</option>
+                <option value="Miso Tahini Soup ">Miso Tahini Soup</option>
+                <option value="">Coconut Quinoa Bowl</option>
+                <option value="">Simple Carrot Soup</option>
+                <option value="Sopa Verde de Elote">Sopa Verde de Elote</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="button expand medium add_field_button">Add Another Dish</div>
+          </div>
+        </div>
+        <br>
+        <hr>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <h6>Company Name</h6>
+            <input type="text">
+          </div>
+        </div>
+        <h6>Phone</h6>
+        <div class="row">
+          <div class="large-4 columns">
+          <input type="text" placeholder="Mobile.">
+          </div>
+          <div class="large-4 columns">
+          <input type="text" placeholder="">
+          </div>
+          <div class="large-4 columns">
+          <input type="text" placeholder="">
+          </div>
+        </div>
+
+        <br>
+        <hr>
+        <h6>Card</h6>
+        <div class="row">
+          <div class="large-4 columns">
+          <input type="text" placeholder="Mobile.">
+          </div>
+          <div class="large-4 columns">
+          <input type="text" placeholder="">
+          </div>
+          <div class="large-4 columns">
+          <input type="text" placeholder="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 columns">
+            <input type="text" placeholder="PIN">
+          </div>
+          <div class="large-6 columns">
+            <div class="large-6 columns">
+              <select name="" id="">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="etc">etc</option>
+              </select>
+            </div>
+            <div class="large-6 columns">
+              <select name="" id="">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="etc">etc</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <br>
+      <a href="#"  class="close-reveal-modal button small">Save</a>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+
+  <div id="show-details-reveal" class="reveal-modal medium" data-reveal>
+    <h3>Orders Overview</h3>
+    <hr>
+    <div class="content-row">
+      <table class="order-summary">
+        <tbody>
+          <tr>
+            <td>
+              <a href="#">Pan Roasted Chicken Breast </a>
+            </td>
+            <td class="text-right">17</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#">Blue Kale Studio Salad</a>
+            </td>
+            <td class="text-right">24</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#">Lentils with Wine-Glazed Vegetables</a>
+            </td>
+            <td class="text-right">13</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#">Persian Yogurt Soup</a>
+            </td>
+            <td class="text-right">8</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+
+
+
+
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/fastclick/lib/fastclick.js"></script>
 <script src="bower_components/foundation/js/foundation.min.js"></script>
@@ -314,5 +494,6 @@ $(function () {
   });
 });
 </script>
+
 </body>
 </html>

@@ -45,7 +45,7 @@
                <li><h6 class="title">Menu</h6></li>
                <li><a href="menu-overview.html">Menu</a></li>
                <li class="active"><a href="menu-items-overview.html">Items</a></li>
-               <li><a href="chefs-overview.html">Chefs</a></li>
+               <li><a href="partner-overview.html">Partners</a></li>
                <li><h6 class="title">Content</h6></li>
                <li><a href="edit-content.html">Home</a></li>
                <li><a href="edit-content.html">Contact</a></li>
@@ -82,164 +82,170 @@
               <div class="large-8 columns left-content">
                 <section class="panel-tabs">
                   <ul class="tabs " data-tab>
-                    <li class="tab-title active"><a href="#panel1">Details</a></li>
+                    <li class="tab-title active"><a href="#panel1">Basic Info</a></li>
                     <li class="tab-title"><a href="#panel2">Ingredients</a></li>
-                    <li class="tab-title"><a href="#panel3">Nutrition</a></li>
+                    <li class="tab-title"><a href="#panel3">Reviews</a></li>
                   </ul>
                   <div class="tabs-content panel-tabs-content">
                     <div class="content active" id="panel1">
-                      <div class="large-12 columns">
-                        <header class="content-row panel-tabs-header">
-                          <div class="title"><strong>Description</strong></div>
-                          <div class="edit"><a href="#">Edit</a></div>
-                        </header>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, consectetur, ab. Explicabo, aliquam! Quis repellat illo, quisquam id dolorem, laudantium recusandae ullam, earum laborum praesentium quos ipsum sunt porro est…</p>
+                      <div class="content-row">
+                        <div class="large-12 columns">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Price</th>
+                                <th>Fees</th>
+                              </tr>
+                            </thead>
+                            <tr>
+                              <td>California Collard Green Wrap (<a href="#">Edit</a>)</td>
+                              <td>$12.99 (<a href="#">Edit</a>)</td>
+                              <td>+ 2.00 Flat Rate Delivery Fee (Tip-Included) (<a href="#">Edit</a>)</td>
+                            </tr>
+
+                          </table>
+                        </div>
+                      </div>
+                      <div class="content-row">
+                        <div class="large-8 columns">
+                          <header class="content-row panel-tabs-header">
+                            <div class="title"><strong>Description</strong></div>
+                            <div class="edit"><a href="#">Edit</a></div>
+                          </header>
+                          <p>This fresh, flavorful salad is served over a bed of quinoa and mixed vegetables. It’s topped with chopped cucumber, kalamata olives, cherry tomatoes, green beans, and feta cheese. Sprouted almonds are layered on to provide texture and crunch.</p>
+
+                          <p>The salad is dressed with a lemon oregano vinaigrette adding a nice citrus flavor.</p>
+                        </div>
+                        <div class="large-4 columns">
+                          <header class="content-row panel-tabs-header">
+                            <div class="title"><strong>Photo</strong></div>
+                            <div class="edit"><a href="#">Edit</a></div>
+                          </header>
+                          <img src="images/menu-block-2.png" class="food-pic" alt="">
+                        </div>
                       </div>
                     </div>
-                    <!-- <div class="content" id="panel2">
-                      <div class="large-12 columns">
-                        <header class="content-row panel-tabs-header">
-                          <div class="title"><strong>Notes</strong></div>
-                          <div class="edit"><a href="#">Edit</a></div>
-                        </header>
-                        <p>Let teriyaki sauce come to room temperature.</p>
-                      </div>
-                      <div class="large-6 columns">
-                        <header class="content-row panel-tabs-header">
-                          <div class="title"><strong>In the Oven</strong></div>
-                          <div class="edit"><a href="#">Edit</a></div>
-                        </header>
-                        <p>heat to 375. Heat chicken for 10-12 min- and brussels, mushrooms and bacon 6-7min.</p>
-                      </div>
-                      <div class="large-6 columns">
-                        <header class="content-row panel-tabs-header">
-                          <div class="title"><strong>In The Microwave</strong></div>
-                          <div class="edit"><a href="#">Edit</a></div>
-                        </header>
-                        <p>Heat chicken and set for 2-3 min or until desired temp.</p>
-                      </div>
-                      <div class="large-12 columns">
-                        <header class="content-row panel-tabs-header">
-                          <div class="title"><strong>To Serve</strong></div>
-                          <div class="edit"><a href="#">Edit</a></div>
-                        </header>
-                        <p>Add teriyaki sauce as desired and enjoy!</p>
-                      </div>
-                    </div> -->
                     <div class="content" id="panel2">
-                      <div class="large-6 columns">
-                        <header class="content-row panel-tabs-header">
-                          <div class="title"><strong>Ingredients</strong></div>
-                          <div class="edit"><a href="#">Edit</a></div>
-                        </header>
-                        <ul class="">
-                          <li>Teriyaki Sauce</li>
-                          <li>Brussels sprouts</li>
-                          <li>Yellow onions</li>
-                          <li>Chicken breast</li>
-                          <li>Enoki mushrooms</li>
-                          <li>Bacon</li>
-                          <li>Olive Oil</li>
-                          <li>Black pepper</li>
-                          <li>Kosher Salt</li>
-                        </ul>
+                      <div class="content-row">
+                        <div class="large-12 columns">
+                          <div class="content-row panel-tabs-header">
+                            <div class="title"><strong>Nutritional Facts</strong></div>
+                            <div class="edit"><a data-reveal-id="edit-nutritional-facts-modal" href="#">Edit</a></div>
+                          </div>
+                          <div class="content-row">
+                            <div class="menu-detail-nutrition-cards" data-equalizer>
+                              <div class="card" >
+                                <div class="inner" data-equalizer-watch>
+                                  <h4>543</h4>
+                                  <span>calories</span>
+                                </div>
+                              </div>
+                              <div class="card" >
+                                <div class="inner" data-equalizer-watch>
+                                  <h4>12g</h4>
+                                  <span>total fat</span>
+                                </div>
+                              </div>
+                              <div class="card" >
+                                <div class="inner" data-equalizer-watch>
+                                  <h4>8g</h4>
+                                  <span>total carbohydrates</span>
+                                </div>
+                              </div>
+                              <div class="card" >
+                                <div class="inner" data-equalizer-watch>
+                                  <h4>4g</h4>
+                                  <span>protein</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                        </div>
                       </div>
-                      <div class="large-6 columns">
-                        <header class="content-row panel-tabs-header">
-                          <div class="title"><strong>Highlighted Ingredients</strong></div>
-                          <div class="edit"><a href="#">Edit</a></div>
-                        </header>
-                        <ul class="">
-                          <li>Brussels sprouts</li>
-                          <li>Bacon</li>
-                          <li>Olive Oil</li>
-                        </ul>
-                        <hr>
-                        <header class="content-row panel-tabs-header">
-                          <div class="title"><strong>Dietary Tags</strong></div>
-                          <div class="edit"><a href="#">Edit</a></div>
-                        </header>
 
-                        <span class="label success">Vegan</span>
+                      <div class="content-row">
+                        <div class="large-6 columns">
+                          <header class="content-row panel-tabs-header">
+                            <div class="title"><strong>Ingredients</strong></div>
+                            <div class="edit"><a href="#" data-reveal-id="ingredients-list-modal">Edit</a></div>
+                          </header>
+                          <ul class="">
+                            <li>kale</li>
+                            <li>quinoa</li>
+                            <li>avocado</li>
+                            <li>collard greens</li>
+                            <li>red cabbage</li>
+                            <li>sweet potato</li>
+                            <li>dijon mustard</li>
+                            <li>white rice vinegar</li>
+                            <li>olive oil</li>
+                            <li>sea salt</li>
+                            <li>crushed black pepper</li>
+                            <li>smoked paprika</li>
+                            <li>dijon mustard</li>
+                            <li>white rice vinegar</li>
+                            <li>olive oil</li>
+                            <li>sea salt</li>
+                            <li>crushed black pepper</li>
+                            <li>smoked paprika</li>
+                          </ul>
+                        </div>
+                        <div class="large-6 columns">
+                          <header class="content-row panel-tabs-header">
+                            <div class="title"><strong>Highlighted Ingredients</strong></div>
+                            <div class="edit"><a href="#">Edit</a></div>
+                          </header>
+                          <ul class="">
+                            <li>Brussels sprouts</li>
+                            <li>Bacon</li>
+                            <li>Olive Oil</li>
+                          </ul>
+                          <hr>
+                          <header class="content-row panel-tabs-header">
+                            <div class="title"><strong>Dietary Tags</strong></div>
+                            <div class="edit"><a data-reveal-id="dietary-tags-modal" href="#">Edit</a></div>
+                          </header>
+
+                          <span class="label info">Vegan</span>
+                          <span class="label info">Spicy!</span>
+                          <span class="label info">Nut-Free</span>
+                        </div>
                       </div>
-                      <div class="large-12 columns">
+
+                      <!-- <div class="large-12 columns">
                         <header class="content-row panel-tabs-header">
                           <div class="title"><strong>Food Allergy Notice</strong></div>
                           <div class="edit"><a href="#">Edit</a></div>
                         </header>
                         <p>Food Allergy Notice: Our meals are prepared in a kitchen whose environment contains nuts and gluten. Though best practices are used when preparing the meal, inadvertent cross-contamination may occur. We cannot guarantee the complete absence of allergens.</p>
-                      </div>
+                      </div> -->
                     </div>
                     <div class="content" id="panel3">
-                      <div class="large-12 columns">
-                        <header class="content-row panel-tabs-header">
-                          <div class="title"><strong>Nutrition Facts</strong></div>
-                          <div class="edit"><a href="#">Edit</a></div>
-                        </header>
-                        <table class="no-borders">
-                          <tbody>
-                            <tr>
-                              <td colspan="2"><strong>Total Fat</strong></td>
-                              <td class="ng-binding">61g</td>
-                            </tr>
+                      <div class="content-row">
+                        <div class="large-12 columns">
+                          <header class="content-row panel-tabs-header">
+                            <div class="title"><strong>Customer Reviews</strong></div>
+                            <div class="edit"><a data-reveal-id="create-customer-review-modal" href="#">Add</a></div>
+                          </header>
+                          <div class="content-row">
+                            <blockquote>
+                              <p>“So delicious, fresh, and simple. The ingredients are top-notch quality. One of my go-to-staples from South Fork.”</p>
+                              <cite>by <strong>Kyle Brandon</strong>   <span class="divider">|</span>  Rated <strong>5 Stars</strong></cite>
+                              <br>
+                              <a href="#"  data-reveal-id="edit-customer-review-modal">Edit</a>
+                            </blockquote>
+                            <blockquote>
+                              <p>“So delicious, fresh, and simple. The ingredients are top-notch quality. One of my go-to-staples from South Fork.”</p>
+                              <cite>by <strong>Kyle Brandon</strong>   <span class="divider">|</span>  Rated <strong>5 Stars</strong></cite>
+                              <br>
+                              <a href="#"  data-reveal-id="edit-customer-review-modal">Edit</a>
+                            </blockquote>
+                          </div>
 
-                            <tr>
-                              <td> </td>
-                              <td>Saturated Fat</td>
-                              <td class="ng-binding">15g</td>
-                            </tr>
-
-                            <tr>
-                              <td> </td>
-                              <td>Trans Fat</td>
-                              <td class="ng-binding">0g</td>
-                            </tr>
-
-                            <tr>
-                              <td> </td>
-                              <td>Polyunsaturated Fat</td>
-                              <td class="ng-binding">15g</td>
-                            </tr>
-
-                            <tr>
-                              <td> </td>
-                              <td>Monounsaturated Fat</td>
-                              <td class="ng-binding">24g</td>
-                            </tr>
-
-                            <tr>
-                              <td colspan="2"><strong>Cholesterol</strong></td>
-                              <td class="ng-binding">130mg</td>
-                            </tr>
-
-                            <tr>
-                              <td colspan="2"><strong>Sodium</strong></td>
-                              <td class="ng-binding">1180mg</td>
-                            </tr>
-
-                            <tr>
-                              <td colspan="2"><strong>Total Carbs</strong></td>
-                              <td class="ng-binding">32g</td>
-                            </tr>
-
-                            <tr>
-                              <td> </td>
-                              <td>Dietary Fiber</td>
-                              <td class="ng-binding">10g</td>
-                            </tr>
-
-                            <tr>
-                              <td> </td>
-                              <td>Sugars</td>
-                              <td class="ng-binding">3g</td>
-                            </tr>
-
-                            <tr>
-                              <td colspan="2"><strong>Protein</strong></td>
-                              <td class="ng-binding">44g</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -315,6 +321,184 @@
         <a href="#"  class="close-reveal-modal button small expand">Save</a>
       </div>
 
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="edit-customer-review-modal" class="reveal-modal medium" data-reveal>
+    <h3>Edit Customer Review</h3>
+    <hr>
+    <div class="content-row">
+      <form action="" class="">
+        <div class="row">
+          <div class="content-row">
+            <div class="large-12 columns">
+              <h6>Customer Quote</h6>
+              <textarea name="" id="" cols="30" rows="4">“So delicious, fresh, and simple. The ingredients are top-notch quality. One of my go-to-staples from South Fork.”</textarea>
+            </div>
+          </div>
+          <div class="content-row">
+            <div class="large-6 columns">
+              <h6>Customer Name</h6>
+              <input type="text" placeholder="Jane Smith">
+            </div>
+            <div class="large-6 columns">
+              <h6>Dish Rating</h6>
+              <select>
+                <option value="1-star">1</option>
+                <option value="2-star">2</option>
+                <option value="3-star">3</option>
+                <option value="4-star" selected>4</option>
+                <option value="5-star">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="content-row">
+            <div class="large-12 columns">
+              <a href="#"  class="close-reveal-modal button small">Save</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+  <div id="create-customer-review-modal" class="reveal-modal medium" data-reveal>
+    <h3>Create Customer Review</h3>
+    <hr>
+    <div class="content-row">
+      <form action="" class="">
+        <div class="row">
+          <div class="content-row">
+            <div class="large-12 columns">
+              <h6>Customer Quote</h6>
+              <textarea name="" id="" cols="30" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="content-row">
+            <div class="large-6 columns">
+              <h6>Customer Name</h6>
+              <input type="text" placeholder="Jane Smith">
+            </div>
+            <div class="large-6 columns">
+              <h6>Dish Rating</h6>
+              <select>
+                <option value="1-star">1</option>
+                <option value="2-star">2</option>
+                <option value="3-star">3</option>
+                <option value="4-star">4</option>
+                <option value="5-star">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="content-row">
+            <div class="large-12 columns">
+              <a href="#"  class="close-reveal-modal button small">Save</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="edit-nutritional-facts-modal" class="reveal-modal medium" data-reveal>
+    <h3>Nutritional Facts</h3>
+    <hr>
+    <div class="content-row">
+      <form action="" class="">
+        <div class="row">
+          <div class="content-row">
+            <div class="large-6 columns">
+              <h6>Calories</h6>
+              <input type="text" placeholder="543">
+            </div>
+            <div class="large-6 columns">
+              <h6>Total Fat</h6>
+              <input type="text" placeholder="12">
+            </div>
+          </div>
+          <div class="content-row">
+            <div class="large-6 columns">
+              <h6>Total Carbohydrates</h6>
+              <input type="text" placeholder="8">
+            </div>
+            <div class="large-6 columns">
+              <h6>Protein</h6>
+              <input type="text" placeholder="4">
+            </div>
+          </div>
+          <div class="content-row">
+            <div class="large-12 columns">
+              <a href="#"  class="close-reveal-modal button small">Save</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="dietary-tags-modal" class="reveal-modal medium" data-reveal>
+    <h2>Edit Dietary Tags</h2>
+    <hr>
+    <div class="content-row">
+      <form action="" class="form ">
+        <div class="row collapse">
+          <div class="large-10 columns">
+            <select class="special-select">
+              <option value="">Vegan</option>
+              <option value="Miso Tahini Soup ">Vegetarian</option>
+              <option value="">Dairy-Free</option>
+              <option value="">Nut-Free</option>
+              <option value="Sopa Verde de Elote">Paleo</option>
+            </select>
+          </div>
+          <div class="large-2 columns">
+            <button class='button expand info'><span data-icon="k"></span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <br>
+    <div class="content-row">
+      <ul class="item-list sortable"  id="sortableList">
+        <li><span class="drag-handle">&#9776;</span>Vegan<span class="rm-handle" data-icon="m"></span></li>
+        <li><span class="drag-handle">&#9776;</span>Vegetarian<span class="rm-handle" data-icon="m"></span></li>
+      </ul>
+    </div>
+    <div class="row">
+      <br>
+      <a href="#"  class="close-reveal-modal button small">Save</a>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="ingredients-list-modal" class="reveal-modal medium" data-reveal>
+    <h2>Edit Ingredients List</h2>
+    <hr>
+    <div class="content-row">
+      <form action="" class="form ">
+        <div class="row collapse">
+          <div class="large-10 columns">
+            <input type="text">
+          </div>
+          <div class="large-2 columns">
+            <button class='button expand info'><span data-icon="k"></span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <br>
+    <div class="content-row">
+      <ul class="item-list sortable"  id="sortableList">
+        <li><span class="drag-handle">&#9776;</span>Kale<span class="rm-handle" data-icon="m"></span></li>
+        <li><span class="drag-handle">&#9776;</span>Brussel Sprouts<span class="rm-handle" data-icon="m"></span></li>
+      </ul>
+    </div>
+    <div class="row">
+      <br>
+      <a href="#"  class="close-reveal-modal button small">Save</a>
     </div>
     <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
   </div>

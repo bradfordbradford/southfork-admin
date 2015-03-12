@@ -98,15 +98,18 @@ $font-weight-bold: 700 !default;
 
 
 
-// $vapor       : #F6F6F6;
+
+$vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 $silver      : #E1E1E1;
 
-// $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
+$gainsboro   : #D8D8D8;
+$iron        : #CCCCCC;
+$old-iron    : #C9C7C9;
 // $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
+$aluminum    : #979899;
+$jumbo       : #827974;
+$jumbo-light : #B4ABA8;
 // $monsoon     : #777777;
 // $steel       : #666666;
 
@@ -117,17 +120,33 @@ $silver      : #E1E1E1;
 
 // Supporting Colors
 $orange      : #F58255;
+$lightest-tan   : #CCC8CA;
 $tan         : #C7AA80;
+$light-tan   : #968F93;
 $brown       : #59514F;
+$dark-brown  : #393738;
 $light-brown : #7B7473;
 
+
+$footer-brown: #4A4648;
+
 $snow        : #F8F8F8;
+$cream       : #F9F9F6;
 $smoke       : #EDEAE3;
 $white       : #FFFFFF;
+$cool        : #F0F5F7;
 
 $charcoal    : #515252;
 $ghost       : #F4F7F8;
 $moss        : #929879;
+$success     : #6FB081;
+$clay        : #9C9A98;
+
+$green       : #77B34F;
+$sea         : #DAE8CC;
+$blue        : #4A90E2;
+
+$gold        : #FAD13E;
 
 
 

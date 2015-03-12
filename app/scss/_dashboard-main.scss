@@ -5,6 +5,12 @@ $dashboard-padding: rem-calc(16);
 #dashboard-main {
     padding-top: $dashboard-padding;
 
+    // Headsup
+    .heads-up {
+        @include clearfix;
+        margin-bottom: rem-calc(40);
+    }
+
     // Header
     .dashboard-header {
         @include clearfix();
