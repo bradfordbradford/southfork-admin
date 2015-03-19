@@ -1,27 +1,4 @@
-'use strict';
-
-var app = (function(document, $) {
-	var docElem = document.documentElement,
-		_userAgentInit = function() {
-			docElem.setAttribute('data-useragent', navigator.userAgent);
-		},
-		_init = function() {
-			$(document).foundation();
-            // needed to use joyride
-            // doc: http://foundation.zurb.com/docs/components/joyride.html
-            $(document).on('click', '#start-jr', function () {
-                $(document).foundation('joyride', 'start');
-            });
-			_userAgentInit();
-		};
-	return {
-		init: _init
-	};
-})(document, jQuery);
-
-(function() {
-	app.init();
-})();
+$(document).foundation();
 
 // +/- Form Field Blocks
 // ---------------------------
@@ -43,35 +20,21 @@ $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
   e.preventDefault(); $(this).parents('div.toggle-fields').remove(); x--;
 })
 
-// Toggle All Checkboxes
-// ----------------------------
-// $('.toggle-all-checkboxes').click (function () {
-//      var checkedStatus = this.checked;
-//      $('.bulk-checkboxes-controls span[data-dropdown]').toggleClass('.show');
-//     $('.toggle-all-checkboxes-wrap').find(':checkbox').each(function () {
-//         $(this).prop('checked', checkedStatus);
-//      });
-// });
-
-
-
-
 
 $(document).ready(function() {
 
-    // Sort Menu Items
-    // ----------------------------
-    Sortable.create(sortableList, {  });
-    Sortable.create(listWithHandle, {
-      handle: '.drag-handle',
-      draggable: "tr",
-      animation: 150
-    });
+    // // Sort Menu Items
+    // // ----------------------------
+    // Sortable.create(sortableList, {  });
+    // Sortable.create(listWithHandle, {
+    //   handle: '.drag-handle',
+    //   draggable: "tr",
+    //   animation: 150
+    // });
 
     // Select2
     // ----------------------------
     $('.special-select').select2();
-
 
 
 });
