@@ -89,7 +89,7 @@
                       <li class="right">
                         <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="right button info dropdown tiny"><span data-icon="f"></span></button><br>
                         <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
-                          <li><a data-reveal-id="edit-chef-status-modal"  href="#">Edit Status</a></li>
+                          <!-- <li><a data-reveal-id="edit-chef-status-modal"  href="#">Edit Status</a></li> -->
                           <li><a data-reveal-id="delete-chef-modal" href="#">Delete</a></li>
                         </ul>
                       </li>
@@ -99,17 +99,21 @@
                     <table>
                       <tbody class="order-totals order-totals-summary">
                         <tr>
-                          <td colspan="3" class="text-right">Zone:</td>
-                          <td class="tr total-col text-left"><span class="label success">A1</span></td>
+                          <td colspan="3" class="text-right">Building(s):</td>
+                          <td class="tr total-col text-left">The Austin, Trans-America Tower</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="text-right">Email:</td>
+                          <td class="tr total-col text-left">kim@gmail.com</td>
                         </tr>
                         <tr>
                           <td colspan="3" class="text-right">Phone:</td>
                           <td class="tr total-col text-left">123-456-7890</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                           <td colspan="3" class="text-right">Status:</td>
                           <td class="tr total-col text-left"><span class="label success">Active</span></td>
-                        </tr>
+                        </tr> -->
                       </tbody>
                     </table>
 
@@ -167,20 +171,30 @@
             <input type="text" placeholder="Last Name">
           </div>
           <div class="large-12 columns">
-            <select>
-              <option value="husker">Atlanta, Georgia</option>
-              <option value="starbuck">Dallas, Texas</option>
-            </select>
+            <h6>Profile Account Info</h6>
+          </div>
+          <div class="large-6 columns">
+            <input type="text" placeholder="Phone">
+          </div>
+          <div class="large-6 columns">
+            <input type="text" placeholder="Email">
           </div>
           <div class="large-12 columns">
-            <hr>
-            <h6>Profile Details</h6>
+            <input type="text" placeholder="Password">
           </div>
           <div class="large-12 columns">
-            <a href="#" class="small info button expand right">Upload Profile Pic</a>
-          </div>
-          <div class="large-12 columns">
-            <textarea name="" id="" placeholder="Bio" cols="30" rows="10"></textarea>
+            <label for="">Building(s)</label>
+            <input id="checkbox1" type="checkbox"><label for="checkbox1">Building 1</label>
+            <br>
+            <input id="checkbox2" type="checkbox"><label for="checkbox2">Building 2</label>
+            <br>
+            <input id="checkbox2" type="checkbox"><label for="checkbox3">Building 3</label>
+            <br>
+            <input id="checkbox1" type="checkbox"><label for="checkbox4">Building 4</label>
+            <br>
+            <input id="checkbox2" type="checkbox"><label for="checkbox5">Building 5</label>
+            <br>
+            <input id="checkbox2" type="checkbox"><label for="checkbox6">Building 6</label>
           </div>
 
           <div class="large-12 columns">
@@ -194,38 +208,6 @@
 
 
 
-<div id="edit-chef-status-modal" class="reveal-modal small" data-reveal>
-  <h3>Chef Profile Status</h3>
-  <hr>
-  <div class="large-6 columns">
-    <div class="large-2 columns">
-      <label>Active</label>
-    </div>
-    <div class="large-2 columns">
-      <fieldset class="switch status-switch" tabindex="0">
-        <input id="exampleCheckboxSwitch4" checked type="checkbox">
-        <label for="exampleCheckboxSwitch4"></label>
-      </fieldset>
-    </div>
-  </div>
-  <div class="large-6 columns">
-    <div class="large-2 columns">
-      <label>Featured</label>
-    </div>
-    <div class="large-2 columns">
-      <fieldset class="switch status-switch" tabindex="1">
-        <input id="exampleCheckboxSwitch4" type="checkbox">
-        <label for="exampleCheckboxSwitch4"></label>
-      </fieldset>
-    </div>
-  </div>
-  <div class="large-12 columns">
-    <br>
-    <a href="#"  class="close-reveal-modal button small expand">Save</a>
-  </div>
-
-  <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
-</div>
 
   <div id="delete-chef-modal" class="reveal-modal small" data-reveal>
     <h3>Are you sure?</h3>

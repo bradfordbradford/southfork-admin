@@ -67,9 +67,11 @@
 
       <section id="dashboard-main">
          <div class="large-10 columns">
-
             <header class="dashboard-header">
               <h5 class="title">Drivers</h5>
+              <div class="filter table-tools ">
+                <a data-reveal-id="edit-driver-modal" href="#" class="button tiny right"><span data-icon="k"></span></a>
+              </div>
             </header>
 
             <section class="dashboard-content">
@@ -89,8 +91,7 @@
                   <thead>
                     <tr>
                       <th data-toggle="true">Name</th>
-                      <th>Zone</th>
-                      <th>Status</th>
+                      <!-- <th>Status</th> -->
                       <th>Phone</th>
                     </tr>
                   </thead>
@@ -99,10 +100,6 @@
                       <td>
                         <a href="driver-detail.html">Kim Livingston</a>
                       </td>
-                      <td>
-                        <span class="label">A1</span>
-                      </td>
-                      <td><div class="label success">Active</div></td>
                       <td>123-456-7890</td>
                     </tr>
                   </tbody>
@@ -120,8 +117,8 @@
       </section>
    </main>
 
-  <div id="add-chef-modal" class="reveal-modal medium" data-reveal>
-      <h3>Create New Profile</h3>
+    <div id="edit-driver-modal" class="reveal-modal medium" data-reveal>
+      <h3>Add Profile</h3>
       <hr>
       <div class="content-row">
         <form action="" class="form ">
@@ -137,43 +134,32 @@
               <input type="text" placeholder="Last Name">
             </div>
             <div class="large-12 columns">
-              <select>
-                <option value="husker">Atlanta, Georgia</option>
-                <option value="starbuck">Dallas, Texas</option>
-              </select>
-            </div>
-            <div class="large-12 columns">
-              <hr>
-              <h6>Profile Details</h6>
-            </div>
-            <div class="large-12 columns">
-              <a href="#" class="small info button expand right">Upload Profile Pic</a>
-            </div>
-            <div class="large-12 columns">
-              <textarea name="" id="" placeholder="Bio" cols="30" rows="10"></textarea>
+              <h6>Profile Account Info</h6>
             </div>
             <div class="large-6 columns">
-              <div class="large-2 columns">
-                <label>Active</label>
-              </div>
-              <div class="large-2 columns">
-                <fieldset class="switch status-switch" tabindex="0">
-                  <input id="exampleCheckboxSwitch4" checked type="checkbox">
-                  <label for="exampleCheckboxSwitch4"></label>
-                </fieldset>
-              </div>
+              <input type="text" placeholder="Phone">
             </div>
             <div class="large-6 columns">
-              <div class="large-2 columns">
-                <label>Featured</label>
-              </div>
-              <div class="large-2 columns">
-                <fieldset class="switch status-switch" tabindex="1">
-                  <input id="exampleCheckboxSwitch4" type="checkbox">
-                  <label for="exampleCheckboxSwitch4"></label>
-                </fieldset>
-              </div>
+              <input type="text" placeholder="Email">
             </div>
+            <div class="large-12 columns">
+              <input type="text" placeholder="Password">
+            </div>
+            <div class="large-12 columns">
+              <label for="">Building(s)</label>
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Building 1</label>
+              <br>
+              <input id="checkbox2" type="checkbox"><label for="checkbox2">Building 2</label>
+              <br>
+              <input id="checkbox2" type="checkbox"><label for="checkbox3">Building 3</label>
+              <br>
+              <input id="checkbox1" type="checkbox"><label for="checkbox4">Building 4</label>
+              <br>
+              <input id="checkbox2" type="checkbox"><label for="checkbox5">Building 5</label>
+              <br>
+              <input id="checkbox2" type="checkbox"><label for="checkbox6">Building 6</label>
+            </div>
+
             <div class="large-12 columns">
               <br>
               <a href="#"  class="close-reveal-modal button small">Save</a>
@@ -181,7 +167,7 @@
         </form>
       </div>
       <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
-  </div>
+    </div>
 
 <script src="js/libs/libs.min.js"></script>
 <script src="js/libs/footable.js"></script>
