@@ -1,6 +1,24 @@
 // Utilities
 // - - - - - - - -
 
+// Fills
+.fill-white {
+    background: $white;
+}
+.fill-snow {
+    background: $snow;
+}
+.fill-cream {
+    background: $cream;
+}
+.fill-cool {
+    background: $cool;
+}
+
+.color-orange {
+    color: $orange !important;
+}
+
 // Ghost Center
 .ghost-center {position: relative;}
 .ghost-content {
@@ -92,4 +110,36 @@
 }
 table.order-summary {
     width:100%;
+}
+
+// Caps
+.caps {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+
+// Families
+.sans {
+    font-family: $font-family-sans-serif;
+}
+.serif {
+    font-family: $font-family-serif;
+}
+
+// Note
+.note, .note a {
+  font-size: 0.75rem;
+  color: $old-iron;
+  display: block;
+}
+
+// Split Panel
+.split-panel {
+    width:50%;
+    float:left;
+     @media #{$medium-down-upperbound} {
+        width:inherit;
+        float: none;
+    }
 }

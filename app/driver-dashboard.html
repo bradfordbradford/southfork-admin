@@ -1,0 +1,283 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SouthFork Admin Dashboard</title>
+   <link rel="stylesheet" href="css/app.css">
+   <script src="bower_components/modernizr/modernizr.js"></script>
+   <script src="//use.typekit.net/dmn4svs.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+   <link href="https://fontastic.s3.amazonaws.com/NEQLgq6DtLDXovVKoDNeJY/icons.css" rel="stylesheet">
+</head>
+<body>
+
+   <nav class="top-bar" data-topbar role="navigation">
+     <ul class="title-area">
+       <li class="name">
+         <h1><a href="/"><img src="images/logo.png" alt=""></a></h1>
+       </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+     </ul>
+
+     <section class="top-bar-section">
+       <ul class="right">
+         <li class="has-dropdown">
+           <a href="#">Agnus Blanche</a>
+           <ul class="dropdown">
+             <li><a href="#">Sign Out</a></li>
+           </ul>
+         </li>
+       </ul>
+     </section>
+   </nav>
+
+   <main class="container">
+      <section id="dashboard-main">
+
+        <div class="clearfix driver-dashboard-header fill-snow" data-equalizer>
+          <div class="split-panel">
+            <div class="fill-white inner" data-equalizer-watch>
+              <header class="section-title">
+                <h4>Today's Partner</h4>
+              <hr>
+              </header>
+              <b>Blind Butcher</b>
+              <br>
+              <a href="#">823-491-5889</a>
+              <br>
+              <a href="#">blindbutcher.com</a>
+              <br>
+              481 Henderson Ave.
+            </div>
+          </div>
+          <div class="split-panel">
+            <div class="fill-white inner" data-equalizer-watch>
+              <header class="section-title">
+                <h4>Contact Manager</h4>
+              <hr>
+              </header>
+              <b>Andy Blechman</b>
+              <br>
+              <a href="#">123-456-1058</a>
+              <br>
+              <br>
+              <p class="note"><em>Don't hesitate to contact your Manager to report order errors or with important questions!</em></p>
+            </div>
+          </div>
+        </div>
+          <!--  <div class="fill-white split-panel" data-equalizer-watch>
+            <div class="inner">
+              <header class="section-title">
+                <h4>Contact Manager</h4>
+              <hr>
+              </header>
+              <a href="">Andy B.</a>
+              <br>
+              <a href="#">123-456-1058</a>
+            </div>
+           </div>
+          </div> -->
+         <div class="large-12 columns">
+            <header class="dashboard-header">
+              <h5 class="title">Today's Orders</h5>
+              <div class="filter table-tools">
+                <a href="" class="left clear-filter tiny info button">All</a>
+                <div class="dropdown-wrap">
+                  <button href="#" data-dropdown="drop-filter-zone" aria-controls="drop-filter-zone" aria-expanded="false" class="tiny info button dropdown">By Zone</button><br>
+                  <ul id="drop-filter-zone" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                    <li><a href="#" class="filter-by-attr" data-filter="A1">A1</a></li>
+                    <li><a href="#" class="filter-by-attr" data-filter="A2">A2</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-wrap">
+                  <button href="#" data-dropdown="drop-filter-building" aria-controls="drop-filter-building" aria-expanded="false" class="tiny info button dropdown">By Building</button><br>
+                  <ul id="drop-filter-building" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                    <li><a href="#" class="filter-by-attr" data-filter="Austin Tower">Austin Tower</a></li>
+                    <li><a href="#" class="filter-by-attr" data-filter="Jefferson Tower">Jefferson Tower</a></li>
+                    <li><a href="#" class="filter-by-attr" data-filter="Chrysler Building">Chrysler Building</a></li>
+                  </ul>
+                </div>
+              </div>
+               <div class="options table-tools ">
+                <a data-reveal-id="change-order-status-modal" href="#" class="button small right">Change Status</a>
+              </div>
+            </header>
+
+            <section class="dashboard-content">
+              <div class="content-row">
+                <table class="table" data-filter="#filter" data-filter-text-only="true" data-page-size="8">
+                  <thead>
+                  <tr>
+                    <th></th>
+                    <th data-toggle="true">Order #</th>
+                    <th>Items/Quantity</th>
+                    <th data-hide="phone, tablet">Customer Name/Num.</th>
+                    <th data-hide="table, phone">Zone/Building</th>
+                    <th data-hide="phone">Status</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>#1</td>
+                      <td>
+                        Kale Salmon Salad (10)
+                        <br>
+                        Ginger &amp; Scallion Noodles (20)
+                      </td>
+                      <td>James Hemmingway: <a href="#">123-456-7899</a></td>
+                      <td>
+                        <span class="label info">A1</span> <a href="#">Austin Tower</a>
+                      </td>
+                      <td>
+                        <span class="label info">Pending</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                        <td colspan="11">
+                          <div class="pagination"></div>
+                        </td>
+                      </tr>
+                  </tfoot>
+                </table>
+
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+            </section>
+         </div>
+      </section>
+   </main>
+
+
+  <div id="change-order-status-modal" class="reveal-modal small" data-reveal>
+    <h3>Order Status</h3>
+    <hr>
+    <div class="clearfix">
+      <div class="large-6 columns">
+        <div class="large-2 columns">
+          <label>Pending</label>
+        </div>
+        <div class="large-2 columns">
+          <fieldset class="switch status-switch" tabindex="0">
+            <input id="exampleRadioSwitch1" type="radio" name="statusGroup">
+          <label for="exampleRadioSwitch1"></label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="large-6 columns">
+        <div class="large-2 columns">
+          <label>Picked Up</label>
+        </div>
+        <div class="large-2 columns">
+          <fieldset class="switch status-switch" tabindex="1">
+            <input id="exampleRadioSwitch2" type="radio" name="statusGroup">
+          <label for="exampleRadioSwitch2"></label>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="clearfix">
+      <div class="large-6 columns">
+        <div class="large-2 columns">
+          <label>On Location</label>
+        </div>
+        <div class="large-2 columns">
+          <fieldset class="switch status-switch" tabindex="0">
+            <input id="exampleRadioSwitch3" type="radio" name="statusGroup">
+          <label for="exampleRadioSwitch3"></label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="large-6 columns">
+        <div class="large-2 columns">
+          <label>Fulfilled</label>
+        </div>
+        <div class="large-2 columns">
+          <fieldset class="switch status-switch" tabindex="1">
+            <input id="exampleRadioSwitch4" type="radio" name="statusGroup">
+          <label for="exampleRadioSwitch4"></label>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="clearfix">
+      <div class="large-6 columns">
+        <div class="large-2 columns">
+          <label>Error</label>
+        </div>
+        <div class="large-2 columns">
+          <fieldset class="switch status-switch" tabindex="0">
+            <input id="exampleRadioSwitch5" type="radio" name="statusGroup">
+          <label for="exampleRadioSwitch5"></label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="large-6 columns">
+        <p class="note">Call Manager to report Error: <a class="color-orange" href="">123-456-7899</a></p>
+      </div>
+    </div>
+    <div class="large-12 columns">
+      <br>
+      <a href="#"  class="close-reveal-modal button small expand">Save</a>
+    </div>
+<!--
+
+      <div class="switch small">
+        <input id="exampleRadioSwitch2" type="radio" name="statusGroup">
+        <label for="exampleRadioSwitch2"></label>
+      </div>
+
+      <div class="switch small">
+        <input id="exampleRadioSwitch3" type="radio" name="statusGroup">
+        <label for="exampleRadioSwitch3"></label>
+      </div> -->
+
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+
+
+
+<script src="js/libs/libs.min.js"></script>
+<script src="js/libs/footable.js"></script>
+<script src="js/libs/footable.paginate.js"></script>
+<script src="js/libs/footable.filter.js"></script>
+<script src="js/libs/footable.sort.js"></script>
+<script src="js/libs/footable.striping.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/js/select2.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+// FooTable
+// ----------------------------
+$(function () {
+  $('table').footable();
+  // Clear
+  $('.clear-filter').click(function (e) {
+    e.preventDefault();
+    $('table').trigger('footable_clear_filter');
+  });
+  // Show Attr
+  $('.filter-by-attr').click(function (e) {
+    e.preventDefault();
+    var day_filter_attr = $(this).attr("data-filter");
+    var footableFilter = $('table').data('footable-filter');
+    footableFilter.filter(day_filter_attr);
+  });
+});
+</script>
+
+</body>
+</html>
