@@ -52,8 +52,8 @@
                <li><a href="menu-items-overview.html">Dishes</a></li>
 
                <li><h6 class="title">Accounts</h6></li>
-               <li><a href="driver-overview.html">Drivers</a></li>
-               <li class="active"><a href="partner-overview.html">Partners</a></li>
+               <li class="active"><a href="driver-overview.html">Drivers</a></li>
+               <li><a href="partner-overview.html">Partners</a></li>
 
                <li><h6 class="title">Content</h6></li>
                <li><a href="edit-content.html">Home</a></li>
@@ -69,13 +69,7 @@
          <div class="large-10 columns">
 
             <header class="dashboard-header">
-              <h5 class="title">Partners</h5>
-              <div class="filter table-tools ">
-                <a href="" class="left clear-filter tiny info button">All</a>
-                <a href="" class="left tiny info button filter-by-attr" data-filter="Active">Active</a>
-                <a href="" class="left tiny info button filter-by-attr" data-filter="Pending">Pending</a>
-                <a data-reveal-id="add-chef-modal" href="#" class="button tiny right"><span data-icon="k"></span></a>
-              </div>
+              <h5 class="title">Drivers</h5>
             </header>
 
             <section class="dashboard-content">
@@ -94,22 +88,20 @@
                 <table class="table" data-filter="#filter" data-filter-text-only="true" data-page-size="8">
                   <thead>
                     <tr>
-                      <th data-toggle="true">Partner</th>
-                      <th data-hide="all">About</th>
+                      <th data-toggle="true">Name</th>
+                      <th>Zone</th>
                       <th>Status</th>
-                      <th>Featured</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="active">
                       <td>
-                        <a href="partner-detail.html">Blind Butcher</a>
+                        <a href="partner-detail.html">Kim Livingston</a>
                       </td>
                       <td>
-                        Blind Butcher, located in the eclectic Lower Greenville Avenue neighborhood of East Dallas, was created by Matt Tobin, Josh Yingling, Oliver Sitrin, Tony Bricker and Ryan Chaney. Blind Butcher is a place where guests will discover fine-dining quality food in a comfortable and casual pub-like setting. We don’t think we fit into a specific category – and, we like that.
+                        <span class="label">A1</span>
                       </td>
                       <td><div class="label success">Active</div></td>
-                      <td><span class="badge success" data-icon="h"></span></a></td>
                     </tr>
                   </tbody>
                   <tfoot>
@@ -156,7 +148,7 @@
               <a href="#" class="small info button expand right">Upload Profile Pic</a>
             </div>
             <div class="large-12 columns">
-              <textarea name="" id="" placeholder="About" cols="30" rows="10"></textarea>
+              <textarea name="" id="" placeholder="Bio" cols="30" rows="10"></textarea>
             </div>
             <div class="large-6 columns">
               <div class="large-2 columns">
@@ -214,7 +206,6 @@ $(function () {
     var footableFilter = $('table').data('footable-filter');
     footableFilter.filter(day_filter_attr);
   });
-
 
 });
 </script>

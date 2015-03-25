@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SouthFork Admin Dashboard</title>
+   <link rel="stylesheet" href="css/app.css">
+   <script src="bower_components/modernizr/modernizr.js"></script>
+   <script src="//use.typekit.net/dmn4svs.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+   <link href="https://fontastic.s3.amazonaws.com/NEQLgq6DtLDXovVKoDNeJY/icons.css" rel="stylesheet">
+</head>
+<body>
+
+   <nav class="top-bar" data-topbar role="navigation">
+     <ul class="title-area">
+       <li class="name">
+         <h1><a href="/"><img src="images/logo.png" alt=""></a></h1>
+       </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+     </ul>
+
+     <section class="top-bar-section">
+       <ul class="right">
+         <li class="has-dropdown">
+           <a href="#">Andy</a>
+           <ul class="dropdown">
+             <li><a href="#">Settings</a></li>
+             <li><a href="#">Driver Portal</a></li>
+             <li class="divider"></li>
+             <li><a href="#">Sign Out</a></li>
+           </ul>
+         </li>
+       </ul>
+     </section>
+   </nav>
+
+   <main class="container">
+      <section id="dashboard-nav" class="large-2 columns">
+        <nav>
+            <ul>
+              <li><h6 class="title">Orders</h6></li>
+               <li class=""><a href="/">All Orders</a></li>
+               <li class="active"><a href="todays-orders">Today's Orders</a></li>
+
+               <li><h6 class="title">Locations</h6></li>
+               <li><a href="locations-overview.html">Locations</a></li>
+
+               <li><h6 class="title">Menu</h6></li>
+               <li><a href="menu-overview.html">Menus</a></li>
+               <li><a href="menu-items-overview.html">Dishes</a></li>
+
+               <li><h6 class="title">Accounts</h6></li>
+               <li><a href="driver-overview.html">Drivers</a></li>
+               <li><a href="partner-overview.html">Partners</a></li>
+
+               <li><h6 class="title">Content</h6></li>
+               <li><a href="edit-content.html">Home</a></li>
+               <li><a href="edit-content.html">Contact</a></li>
+               <li><a href="edit-content.html">About</a></li>
+               <li><a href="edit-content.html">Legal</a></li>
+               <li><a href="edit-content.html">(etc)</a></li>
+            </ul>
+         </nav>
+      </section>
+
+      <section id="dashboard-main">
+         <div class="large-10 columns">
+
+            <div class="heads-up">
+              <div class="menu-detail-nutrition-cards" data-equalizer>
+                <div class="card" >
+                  <div class="inner" data-equalizer-watch>
+                    <h4>19</h4>
+                    <span>kale salmon salad</span>
+                  </div>
+                </div>
+                <div class="card" >
+                  <div class="inner" data-equalizer-watch>
+                    <h4>48</h4>
+                    <span>grilled chicken sandwhiche</span>
+                  </div>
+                </div>
+                <div class="card" >
+                  <div class="inner" data-equalizer-watch>
+                    <h4>24</h4>
+                    <span>veggie stir fry</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <header class="dashboard-header">
+              <h5 class="title">Today's Orders Summary</h5>
+            </header>
+
+            <section class="dashboard-content">
+              <div class="content-row">
+                <table class="order-summary">
+                  <thead>
+                    <tr>
+                      <th class="title" colspan="4">Building 1</th>
+                    </tr>
+                    <tr>
+                      <th>Item</th>
+                      <th>Quantity</th>
+                      <th>Driver(s)</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Kale & Fresh Salmon</td>
+                      <td>23</td>
+                      <td><a href="#">Scott Hill</a></td>
+                      <td><span class="label info">Pending</span></td>
+                    <tr>
+                      <td>Spinach BLT</td>
+                      <td>23</td>
+                      <td><a href="#">Amy Wright</a></td>
+                      <td><span class="label success">On Location</span></td>
+                    </tr>
+                      <td>Veggie Stir Fry</td>
+                      <td>23</td>
+                      <td><a href="#">John Blake</a></td>
+                      <td><span class="label success">Dropped-Off</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="order-summary">
+                  <thead>
+                    <tr>
+                      <th  class="title" colspan="4">Building 2</th>
+                    </tr>
+                    <tr>
+                      <th>Item</th>
+                      <th>Quantity</th>
+                      <th>Driver(s)</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Bacon Marmalade Burger</td>
+                      <td>17</td>
+                      <td><a href="#">Wayne McGregor</a></td>
+                      <td><span class="label warning">Error</span></td>
+                    <tr>
+                      <td>White Beans, Sausage & Cabbage</td>
+                      <td>47</td>
+                      <td><a href="#">Earl Johnston</a></td>
+                      <td><span class="label success">Complete</span></td>
+                    </tr>
+                      <td><span data-tooltip aria-haspopup="true" class="has-tip badge alert" title="Some orders have been marked as incomplete" data-icon="i"></span>Egg Drop Soup</td>
+                      <td>19</td>
+                      <td><a href="#">Kim Sanders</a>, <a href="#">Amy Wright</a></td>
+                      <td><span class="label info">Mixed</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+            </section>
+         </div>
+      </section>
+   </main>
+
+<script src="js/libs/libs.min.js"></script>
+<script src="js/libs/footable.js"></script>
+<script src="js/libs/footable.paginate.js"></script>
+<script src="js/libs/footable.filter.js"></script>
+<script src="js/libs/footable.sort.js"></script>
+<script src="js/libs/footable.striping.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/js/select2.min.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+</html>

@@ -40,12 +40,21 @@
       <section id="dashboard-nav" class="large-2 columns">
          <nav>
             <ul>
-               <li class="active"><a href="/">Orders</a></li>
+              <li><h6 class="title">Orders</h6></li>
+               <li class="active"><a href="/">All Orders</a></li>
+               <li class=""><a href="todays-orders.html">Today's Summary</a></li>
+
+               <li><h6 class="title">Locations</h6></li>
                <li><a href="locations-overview.html">Locations</a></li>
+
                <li><h6 class="title">Menu</h6></li>
                <li><a href="menu-overview.html">Menus</a></li>
                <li><a href="menu-items-overview.html">Dishes</a></li>
+
+               <li><h6 class="title">Accounts</h6></li>
+               <li><a href="driver-overview.html">Drivers</a></li>
                <li><a href="partner-overview.html">Partners</a></li>
+
                <li><h6 class="title">Content</h6></li>
                <li><a href="edit-content.html">Home</a></li>
                <li><a href="edit-content.html">Contact</a></li>
@@ -125,10 +134,7 @@
               </div>
               <div class="options table-tools ">
                 <a data-reveal-id="create-new-order-modal" href="#" class="button small right"> <span class="on-left icon" data-icon="k"></span> Create Order</a>
-
-                <a data-reveal-id="show-details-reveal" href="#" class="button small right secondary"> <span class="on-left icon" data-icon="o"></span>  Orders Overview</a>
-
-
+                <a data-reveal-id="export-orders-modal" class="button small right secondary" href="#">Export Orders</a>
               </div>
             </header>
 
@@ -312,6 +318,11 @@
                       </tr>
                   </tfoot>
                 </table>
+
+                <br>
+                <br>
+                <br>
+                <br>
               </div>
 
 
@@ -320,7 +331,45 @@
       </section>
    </main>
 
-   <div id="create-new-order-modal" class="reveal-modal medium" data-reveal>
+  <div id="export-orders-modal" class="reveal-modal medium" data-reveal>
+    <h3>Export Orders</h3>
+    <hr>
+    <div class="content-row">
+      <form action="">
+
+          <div class="clearfix">
+            <div class="large-12 columns">
+              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">All Orders</label>
+            </div>
+          </div>
+          <br>
+
+          <div class="clearfix">
+            <div class="large-12 columns">
+              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">By Date</label>
+            </div>
+          </div>
+
+          <div class="clearfix">
+            <div class="large-6 columns">
+              <label for="">Start Date</label><input type="text">
+            </div>
+            <div class="large-6 columns">
+              <label for="">End Date</label><input type="text">
+            </div>
+          </div>
+
+
+      </form>
+    </div>
+    <div class="large-12 columns">
+      <br>
+      <a href="#"  class="close-reveal-modal button small">Export</a>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="create-new-order-modal" class="reveal-modal medium" data-reveal>
     <h3>Create New Order</h3>
     <hr>
     <div class="content-row">
@@ -428,46 +477,26 @@
     <h3>Orders Overview</h3>
     <hr>
     <div class="content-row">
-      <table class="order-summary">
+      <!-- <table class="table order-summary">
+        <thead>
+          <tr>
+            <th data-toggle="true">Location</th>
+            <th>Total Orders</th>
+            <th data-hide="all">Items Quantity</th>
+            <th data-hide="all">Items</th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>
-              <a href="#">Pan Roasted Chicken Breast </a>
-            </td>
-            <td>
-              The Austin
+              Building A
             </td>
             <td class="text-right">17</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#">Blue Kale Studio Salad</a>
-            </td>
-            <td>
-              The Juile
-            </td>
-            <td class="text-right">24</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#">Lentils with Wine-Glazed Vegetables</a>
-            </td>
-            <td>
-              Trans-America Tower
-            </td>
-            <td class="text-right">13</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#">Persian Yogurt Soup</a>
-            </td>
-            <td>
-              The Jefferson Building
-            </td>
-            <td class="text-right">8</td>
+            <td>12</td>
+            <td>Chicken</td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
     </div>
 
     <a class="close-reveal-modal exit-reveal-modal">&#215;</a>

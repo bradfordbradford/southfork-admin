@@ -4560,6 +4560,10 @@ table {
   table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
     display: table-cell;
     line-height: 1.125rem; }
+  table .title {
+    text-align: center !important;
+    text-transform: uppercase;
+    letter-spacing: 0.04em; }
 
 .tabs {
   margin-bottom: 0 !important;
