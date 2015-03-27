@@ -53,3 +53,14 @@
     background: $snow;
     border: $silver 1px solid;
 }
+
+// Driver Status Switches
+.status-switches {
+
+    h3 {margin-top: 0;}
+    .switch {
+        margin:2px auto 16px;
+        float: right;
+    }
+
+}

@@ -33,6 +33,7 @@
      </section>
    </nav>
 
+
    <main class="container">
       <section id="dashboard-main">
 
@@ -67,18 +68,7 @@
             </div>
           </div>
         </div>
-          <!--  <div class="fill-white split-panel" data-equalizer-watch>
-            <div class="inner">
-              <header class="section-title">
-                <h4>Contact Manager</h4>
-              <hr>
-              </header>
-              <a href="">Andy B.</a>
-              <br>
-              <a href="#">123-456-1058</a>
-            </div>
-           </div>
-          </div> -->
+
          <div class="large-12 columns">
             <header class="dashboard-header">
               <h5 class="title">Today's Orders</h5>
@@ -103,7 +93,7 @@
                 <table class="table" data-filter="#filter" data-filter-text-only="true" data-page-size="8">
                   <thead>
                   <tr>
-                    <th></th>
+                    <td data-sort-ignore="true"><input id="selecctall" type="checkbox"></td>
                     <th data-toggle="true">Order #</th>
                     <th>Items/Quantity</th>
                     <th data-hide="phone, tablet">Customer Name/Num.</th>
@@ -113,7 +103,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input type="checkbox"></td>
+                      <td><input type="checkbox" class="checkboxSelect"></td>
                       <td>#1</td>
                       <td>
                         Kale Salmon Salad (10)
@@ -126,6 +116,22 @@
                       </td>
                       <td>
                         <span class="label info">Pending</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" class="checkboxSelect"></td>
+                      <td>#1</td>
+                      <td>
+                        Kale Salmon Salad (19)
+                        <br>
+                        Ginger &amp; Scallion Noodles (14)
+                      </td>
+                      <td>Ezra Pound: <a href="#">123-456-7899</a></td>
+                      <td>
+                        <a href="#">Jefferson Tower</a>
+                      </td>
+                      <td>
+                        <span class="label info">On Location</span>
                       </td>
                     </tr>
                   </tbody>
@@ -149,94 +155,126 @@
    </main>
 
 
-  <div id="change-order-status-modal" class="reveal-modal small" data-reveal>
+  <div id="change-order-status-modal" class="reveal-modal small status-switches" data-reveal>
     <h3>Order Status</h3>
+    <p class="note">Only one status can be assigned at a time.</p>
     <hr>
-    <div class="clearfix">
-      <div class="large-6 columns">
-        <div class="large-2 columns">
-          <label>Pending</label>
-        </div>
-        <div class="large-2 columns">
-          <fieldset class="switch status-switch" tabindex="0">
-            <input id="exampleRadioSwitch1" type="radio" name="statusGroup">
-          <label for="exampleRadioSwitch1"></label>
-          </fieldset>
-        </div>
-      </div>
-      <div class="large-6 columns">
-        <div class="large-2 columns">
-          <label>Picked Up</label>
-        </div>
-        <div class="large-2 columns">
-          <fieldset class="switch status-switch" tabindex="1">
-            <input id="exampleRadioSwitch2" type="radio" name="statusGroup">
-          <label for="exampleRadioSwitch2"></label>
-          </fieldset>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
 
     <div class="clearfix">
       <div class="large-6 columns">
-        <div class="large-2 columns">
-          <label>On Location</label>
-        </div>
-        <div class="large-2 columns">
+        <h5>1. Pending </h5>
+      </div>
+
+      <div class="large-6 columns">
+          <fieldset class="switch status-switch" tabindex="0">
+            <input id="exampleRadioSwitch1" type="radio" checked name="statusGroup">
+          <label for="exampleRadioSwitch1"></label>
+          </fieldset>
+      </div>
+      <hr>
+    </div>
+
+
+    <div class="clearfix">
+      <div class="large-6 columns">
+        <h5>2. Picked Up </h5>
+        <p class="note">Meal has been picked up from restaurant, is on the way</p>
+      </div>
+
+      <div class="large-6 columns">
+          <fieldset class="switch status-switch" tabindex="0">
+            <input id="exampleRadioSwitch2" type="radio" name="statusGroup">
+          <label for="exampleRadioSwitch2"></label>
+          </fieldset>
+      </div>
+      <hr>
+    </div>
+
+
+
+    <div class="clearfix">
+      <div class="large-6 columns">
+        <h5>3. On Location </h5>
+        <p class="note">Meal is at customer's office or building</p>
+      </div>
+
+      <div class="large-6 columns">
           <fieldset class="switch status-switch" tabindex="0">
             <input id="exampleRadioSwitch3" type="radio" name="statusGroup">
           <label for="exampleRadioSwitch3"></label>
           </fieldset>
-        </div>
       </div>
-      <div class="large-6 columns">
-        <div class="large-2 columns">
-          <label>Fulfilled</label>
-        </div>
-        <div class="large-2 columns">
-          <fieldset class="switch status-switch" tabindex="1">
-            <input id="exampleRadioSwitch4" type="radio" name="statusGroup">
-          <label for="exampleRadioSwitch4"></label>
-          </fieldset>
-        </div>
-      </div>
+      <hr>
     </div>
-    <br>
-    <br>
+
+
+    <div class="clearfix">
+      <h4 class="text-center">4. Choose One </h4>
+      <br>
+    </div>
 
     <div class="clearfix">
       <div class="large-6 columns">
-        <div class="large-2 columns">
-          <label>Error</label>
-        </div>
-        <div class="large-2 columns">
+        <h5>Dropped Off</h5>
+        <p class="note">Meal has been left @ Customer’s Office Suite</p>
+      </div>
+
+      <div class="large-6 columns">
+          <fieldset class="switch status-switch" tabindex="0">
+            <input id="exampleRadioSwitch4" type="radio" name="statusGroup">
+          <label for="exampleRadioSwitch4"></label>
+          </fieldset>
+      </div>
+
+    </div>
+
+    <h6 class="text-center">Or</h6>
+
+    <div class="clearfix">
+      <div class="large-6 columns">
+        <h5>Delivered</h5>
+        <p class="note">Meal was hand delivered to customer</p>
+      </div>
+
+      <div class="large-6 columns">
           <fieldset class="switch status-switch" tabindex="0">
             <input id="exampleRadioSwitch5" type="radio" name="statusGroup">
           <label for="exampleRadioSwitch5"></label>
           </fieldset>
-        </div>
       </div>
+      <hr>
+    </div>
+
+    <div class="clearfix">
       <div class="large-6 columns">
-        <p class="note">Call Manager to report Error: <a class="color-orange" href="">123-456-7899</a></p>
+        <h5>Error</h5>
+        <p class="note">Something went wrong!</p>
+      </div>
+
+      <div class="large-6 columns">
+          <fieldset class="switch status-switch" tabindex="0">
+            <input id="exampleRadioSwitch6" type="radio" class="error" name="statusGroup">
+            <label for="exampleRadioSwitch6"></label>
+          </fieldset>
+      </div>
+      <hr>
+    </div>
+
+    <div class="clearfix">
+      <div class="large-8 large-centered columns">
+        <h5 class="text-center">
+          <strong>Call Manager to report Error:
+            <br>
+            <a class="color-orange" href="">123-456-7899</a></strong>
+        </h5>
       </div>
     </div>
+
+
     <div class="large-12 columns">
       <br>
       <a href="#"  class="close-reveal-modal button small expand">Save</a>
     </div>
-<!--
-
-      <div class="switch small">
-        <input id="exampleRadioSwitch2" type="radio" name="statusGroup">
-        <label for="exampleRadioSwitch2"></label>
-      </div>
-
-      <div class="switch small">
-        <input id="exampleRadioSwitch3" type="radio" name="statusGroup">
-        <label for="exampleRadioSwitch3"></label>
-      </div> -->
 
     <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
   </div>

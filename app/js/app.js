@@ -39,3 +39,19 @@ $(document).ready(function() {
 
 });
 
+
+
+$(document).ready(function() {
+    $('#selecctall').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('tr:not(.footable-filtered) .checkboxSelect').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkboxSelect"
+            });
+        }else{
+            $('.checkboxSelect').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"
+            });
+        }
+    });
+
+});

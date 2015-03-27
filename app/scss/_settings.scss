@@ -160,6 +160,8 @@ $success-color: $moss;
 $warning-color: $tan;
 $info-color: $charcoal;
 
+$error-red        : #F45656;
+
 
 
 
@@ -1276,7 +1278,8 @@ $close-reveal-modal-class: "close-reveal-modal-test";
 // $switch-border-color: scale-color($white, $lightness: -20%);
 // $switch-border-style: solid;
 // $switch-border-width: 1px;
-// $switch-bg: $white;
+$switch-bg:$aluminum;
+$switch-disabled-color: $silver;
 
 // We use these to control the switch heights for our default classes
 // $switch-height-tny: rem-calc(22);
@@ -1300,7 +1303,7 @@ $close-reveal-modal-class: "close-reveal-modal-test";
 // $switch-paddle-border-style: solid;
 // $switch-paddle-transition-speed: .1s;
 // $switch-paddle-transition-ease: ease-out;
-// $switch-positive-color: scale-color($success-color, $lightness: 94%);
+$switch-positive-color: scale-color($green, $lightness: 94%);
 // $switch-negative-color: $white-smoke;
 
 // Outline Style for tabbing through switches
