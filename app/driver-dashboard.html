@@ -37,7 +37,7 @@
    <main class="container">
       <section id="dashboard-main">
 
-        <div class="clearfix driver-dashboard-header fill-snow" data-equalizer>
+        <div class="clearfix driver-dashboard-header fill-snow hide-for-small-only" data-equalizer>
           <div class="split-panel">
             <div class="fill-white inner" data-equalizer-watch>
               <header class="section-title">
@@ -69,7 +69,8 @@
           </div>
         </div>
 
-         <div class="large-12 columns">
+        <div class="clearfix">
+          <div class="large-12 columns">
             <header class="dashboard-header">
               <h5 class="title">Today's Orders</h5>
               <div class="filter table-tools">
@@ -82,21 +83,42 @@
                     <li><a href="#" class="filter-by-attr" data-filter="Chrysler Building">Chrysler Building</a></li>
                   </ul>
                 </div>
+                <div class="dropdown-wrap">
+                  <button href="#" data-dropdown="drop-filter-company" aria-controls="drop-filter-company" aria-expanded="false" class="tiny info button dropdown">By Company</button><br>
+                  <ul id="drop-filter-company" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                    <li><a href="#" class="filter-by-attr" data-filter="Amazon">Amazon</a></li>
+                    <li><a href="#" class="filter-by-attr" data-filter="Oak Cliff Coffee Roasting Co.">Oak Cliff Coffee Roasting Co.</a></li>
+                    <li><a href="#" class="filter-by-attr" data-filter="Apple">Apple</a></li>
+                  </ul>
+                </div>
               </div>
-               <div class="options table-tools ">
+               <div class="options table-tools">
+                <a href="#contact-info" class="button small secondary visible-for-small-only">View Contact Info</a>
                 <a data-reveal-id="change-order-status-modal" href="#" class="button small right">Change Status</a>
               </div>
             </header>
 
             <section class="dashboard-content">
               <div class="content-row">
+                <div class="table-search">
+                  <form action="" class="form ">
+                    <div class="row">
+                      <div class="large-11 columns"><input id="filter" type="text"/></div>
+                      <div class="large-1 columns"><a href="#clear" class="clear-filter button expand info" title="clear filter"><span data-icon="n"></span></a></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="content-row">
                 <table class="table" data-filter="#filter" data-filter-text-only="true" data-page-size="8">
                   <thead>
                   <tr>
                     <td data-sort-ignore="true"><input id="selecctall" type="checkbox"></td>
                     <th data-toggle="true">Order #</th>
-                    <th>Items/Quantity</th>
-                    <th data-hide="phone, tablet">Customer Name/Num.</th>
+                    <th data-hide="phone, tablet">Items/Quantity</th>
+                    <th>Customer Name/Num.</th>
+                    <th data-hide="table, phone">Company</th>
                     <th data-hide="table, phone">Building</th>
                     <th data-hide="phone">Status</th>
                   </tr>
@@ -111,27 +133,29 @@
                         Ginger &amp; Scallion Noodles (20)
                       </td>
                       <td>James Hemmingway: <a href="#">123-456-7899</a></td>
+                      <td>Apple</td>
                       <td>
-                        <a href="#">Austin Tower</a>
+                        <a data-reveal-id="building-modal"  href="#">Austin Tower</a>
                       </td>
                       <td>
-                        <span class="label info">Pending</span>
+                        <span class="label mixed">Mixed</span>
                       </td>
                     </tr>
                     <tr>
                       <td><input type="checkbox" class="checkboxSelect"></td>
-                      <td>#1</td>
+                      <td>#2</td>
                       <td>
-                        Kale Salmon Salad (19)
+                        Quinoa Salad (19)
                         <br>
                         Ginger &amp; Scallion Noodles (14)
                       </td>
                       <td>Ezra Pound: <a href="#">123-456-7899</a></td>
+                      <td>Amazon</td>
                       <td>
-                        <a href="#">Jefferson Tower</a>
+                        <a data-reveal-id="building-modal" href="#">Jefferson Tower</a>
                       </td>
                       <td>
-                        <span class="label info">On Location</span>
+                        <span class="label dropped">Dropped Off</span>
                       </td>
                     </tr>
                   </tbody>
@@ -150,10 +174,77 @@
                 <br>
               </div>
             </section>
-         </div>
+          </div>
+        </div>
+
+        <div id="contact-info" class="clearfix driver-dashboard-header fill-snow visible-for-small-only" >
+          <div class="clearfix">
+            <a href="#dashboard-main" class="small button right"><span data-icon="s"></span></a>
+          </div>
+          <div class="split-panel">
+            <div class="fill-white inner">
+              <header class="section-title">
+                <h4>Today's Partner</h4>
+              <hr>
+              </header>
+              <b>Blind Butcher</b>
+              <br>
+              <a href="#">823-491-5889</a>
+              <br>
+              <a href="#">blindbutcher.com</a>
+              <br>
+              481 Henderson Ave.
+            </div>
+          </div>
+          <div class="split-panel">
+            <div class="fill-white inner">
+              <header class="section-title">
+                <h4>Contact Manager</h4>
+              <hr>
+              </header>
+              <b>Andy Blechman</b>
+              <br>
+              <a href="#">123-456-1058</a>
+              <br>
+              <br>
+              <p class="note"><em>Don't hesitate to contact your Manager to report order errors or with important questions!</em></p>
+            </div>
+          </div>
+        </div>
       </section>
    </main>
 
+  <div id="building-modal" class="reveal-modal small" data-reveal>
+    <h3>Jefferson Tower</h3>
+    <hr>
+    <div class="clearfix">
+      <div class="large-12 columns">
+        <p>
+          Jefferson Tower
+          <br>
+          Parry Ave.
+          <br>
+          Atlanta, GA
+          <br>
+          79876
+        </p>
+      </div>
+    </div>
+    <div class="clearfix">
+      <div class="large-12 columns">
+        <a target="_blank" href="https://www.google.com/maps/place/Reunion+Tower/@32.775604,-96.808953,17z/data=!3m1!4b1!4m2!3m1!1s0x864e9913f6124ce3:0x3265806ad4f33a17" class="button expand">View Map</a>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="clearfix">
+      <div class="large-12 columns">
+        <h5>Notes:</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, iusto. Reiciendis illo dolorem unde fuga quibusdam est, fugit, sequi explicabo possimus vitae recusandae cumque eligendi eaque earum eius! Quae, optio!</p>
+      </div>
+    </div>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
 
   <div id="change-order-status-modal" class="reveal-modal small status-switches" data-reveal>
     <h3>Order Status</h3>
@@ -177,8 +268,8 @@
 
     <div class="clearfix">
       <div class="large-6 columns">
-        <h5>2. Picked Up </h5>
-        <p class="note">Meal has been picked up from restaurant, is on the way</p>
+        <h5>2. Picked Up* </h5>
+        <p class="note">Order has been picked up from restaurant, is on the way</p>
       </div>
 
       <div class="large-6 columns">
@@ -194,8 +285,8 @@
 
     <div class="clearfix">
       <div class="large-6 columns">
-        <h5>3. On Location </h5>
-        <p class="note">Meal is at customer's office or building</p>
+        <h5>3. Arrived* </h5>
+        <p class="note">Order has been hand-delivered to the customer or dropped-off at their office suite.</p>
       </div>
 
       <div class="large-6 columns">
@@ -209,14 +300,14 @@
 
 
     <div class="clearfix">
-      <h4 class="text-center">4. Choose One </h4>
+      <h4 class="text-center">Other Options</h4>
       <br>
     </div>
 
     <div class="clearfix">
       <div class="large-6 columns">
-        <h5>Dropped Off</h5>
-        <p class="note">Meal has been left @ Customer’s Office Suite</p>
+        <h5>On Location*</h5>
+        <p class="note">Delivery personel is in the building's lobby. Customer should come pick-up order.</p>
       </div>
 
       <div class="large-6 columns">
@@ -225,25 +316,25 @@
           <label for="exampleRadioSwitch4"></label>
           </fieldset>
       </div>
-
     </div>
 
-    <h6 class="text-center">Or</h6>
+
 
     <div class="clearfix">
       <div class="large-6 columns">
-        <h5>Delivered</h5>
-        <p class="note">Meal was hand delivered to customer</p>
+        <h5>Dropped-off</h5>
+        <p class="note">Delivery personal could not hand-deliver order to customer. Order was left in the building's lobby.</p>
       </div>
 
       <div class="large-6 columns">
           <fieldset class="switch status-switch" tabindex="0">
-            <input id="exampleRadioSwitch5" type="radio" name="statusGroup">
-          <label for="exampleRadioSwitch5"></label>
+            <input id="exampleRadioSwitch6" type="radio" class="error" name="statusGroup">
+            <label for="exampleRadioSwitch6"></label>
           </fieldset>
       </div>
       <hr>
     </div>
+
 
     <div class="clearfix">
       <div class="large-6 columns">
@@ -274,6 +365,13 @@
     <div class="large-12 columns">
       <br>
       <a href="#"  class="close-reveal-modal button small expand">Save</a>
+    </div>
+
+    <div class="clearfix">
+      <div class="large-12 columns">
+        <hr>
+        <p class="note">*SMS is sent to the customer upon status change</p>
+      </div>
     </div>
 
     <a class="close-reveal-modal exit-reveal-modal">&#215;</a>

@@ -66,6 +66,22 @@ $dashboard-padding: rem-calc(16);
             }
         }
 
+        @media #{$small-only} {
+            .title {
+                float: none;
+            }
+            .filter {
+                margin: 1em 0;
+                float: none;
+                border: 0px;
+                padding: 0;
+            }
+            .table-tools .button {
+                margin-right: 5px;
+                float:left !important;
+            }
+        }
+
     }
 
     // Content
@@ -93,10 +109,10 @@ $dashboard-padding: rem-calc(16);
                 td { opacity: .5; }
             }
             td:last-child, th:last-child {text-align: right; border-right: 1px solid $silver;}
+            @media #{$small-only} {border-right: 1px solid $silver;}
 
             // Alerts in Rows
             .badge[data-icon] {
-
                 position: relative;
                 top: 1px;
                 font-size: 1rem;

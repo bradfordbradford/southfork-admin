@@ -64,3 +64,17 @@
     }
 
 }
+
+
+.accordion.edge-to-edge {
+    margin:0;
+    padding:0;
+    .accordion-navigation > .content, dd > .content {
+        padding:0;
+    }
+    .accordion-header {display: none}
+
+    @media #{$small-only} {
+        .accordion-header {display: block}
+    }
+}

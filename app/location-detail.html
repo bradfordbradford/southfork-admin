@@ -98,18 +98,31 @@
                   <section class="panel-content">
                     <table>
                       <tbody class="order-totals order-totals-summary">
-                        <!-- <tr>
-                          <td colspan="3" class="tr">Zone:</td>
-                          <td class="tr total-col"><div class="label success">A1</div></td>
-                        </tr> -->
+                        <tr>
+                          <td colspan="3" class="tr">Company:</td>
+                          <td class="tr total-col">Amazon</td>
+
+                        </tr>
                         <tr>
                           <td colspan="3" class="tr">Address:</td>
                           <td class="tr total-col">
                             <p class="address-1">1 Westheimer Road</p>
-                      <p class="address-2">Appt. A</p>
-                      <p class="city">Paris</p>
-                      <p class="zip">79876</p>
-                      <p class="country">United States</p>
+                            <p class="address-2">Appt. A</p>
+                            <p class="city">Paris</p>
+                            <p class="zip">79876</p>
+                            <p class="country">United States</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="tr">Notes:</td>
+                          <td class="tr total-col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, nam. In eius possimus, vitae rem quidem libero facilis facere impedit molestiae aperiam non obcaecati hic unde dolore dolor omnis, natus!</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="tr">Map URL:</td>
+                          <td class="tr total-col">
+                            <a href="#" target="_blank">View Map</a>
                           </td>
                         </tr>
                         <tr>
@@ -161,62 +174,71 @@
 
 
   <div id="edit-location-modal" class="reveal-modal medium" data-reveal>
-    <h3>Location Details</h3>
-    <hr>
-    <div class="content-row">
-      <form action="" class="form ">
-        <div class="row">
-          <div class="large-12 columns">
-            <h6>Building General Info</h6>
-            <input type="text" placeholder="Building Name">
-            <input type="text" placeholder="Building Zone">
-          </div>
-          <div class="large-12 columns">
+      <h3>Create New Location</h3>
+      <hr>
+      <div class="content-row">
+        <form action="" class="form ">
+          <div class="row">
+
+            <div class="large-12 columns">
+              <h6>Building General Info</h6>
+              <input type="text" placeholder="Building Name">
+              <!-- <input type="text" placeholder="Building Zone"> -->
+            </div>
+            <div class="large-12 columns">
+              <hr>
+              <h6>Building Address</h6>
+            </div>
+            <div class="large-12 columns">
+              <input type="text" placeholder="Street Address">
+            </div>
+            <div class="large-12 columns">
+              <input type="text" placeholder="Apartment or Suite">
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="City">
+            </div>
+            <div class="large-6 columns">
+              <select>
+                <option value="husker">Georgia</option>
+                <option value="starbuck">And that's it!</option>
+                <option value="hotdog">How about Oregon?</option>
+                <option value="apollo">Nope.</option>
+              </select>
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="Zip/Postal">
+            </div>
+            <div class="large-6 columns">
+              <select>
+                <option value="husker">USA</option>
+                <option value="starbuck">And that's it!</option>
+                <option value="hotdog">How about Italy?</option>
+                <option value="apollo">Nope.</option>
+              </select>
+            </label>
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="Latitude">
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="Longitude">
+            </div>
+            <div class="large-12 columns">
+              <input type="text" placeholder="Maps URL">
+            </div>
+            <br>
             <hr>
-            <h6>Building Address</h6>
-          </div>
-          <div class="large-12 columns">
-            <input type="text" placeholder="Street Address">
-          </div>
-          <div class="large-12 columns">
-            <input type="text" placeholder="Apartment or Suite">
-          </div>
-          <div class="large-6 columns">
-            <input type="text" placeholder="City">
-          </div>
-          <div class="large-6 columns">
-            <select>
-              <option value="husker">Georgia</option>
-              <option value="starbuck">And that's it!</option>
-              <option value="hotdog">How about Oregon?</option>
-              <option value="apollo">Nope.</option>
-            </select>
-          </div>
-          <div class="large-6 columns">
-            <input type="text" placeholder="Zip/Postal">
-          </div>
-          <div class="large-6 columns">
-            <select>
-              <option value="husker">USA</option>
-              <option value="starbuck">And that's it!</option>
-              <option value="hotdog">How about Italy?</option>
-              <option value="apollo">Nope.</option>
-            </select>
-          </label>
-          </div>
-          <div class="large-6 columns">
-            <input type="text" placeholder="Latitude">
-          </div>
-          <div class="large-6 columns">
-            <input type="text" placeholder="Longitude">
-          </div>
-          <div class="large-12 columns">
-            <a href="#"  class="close-reveal-modal button small">Save</a>
-          </div>
-      </form>
+            <div class="large-12 columns">
+              <textarea name="" id="" cols="30" rows="8" placeholder="Notes for Delivery Personnel"></textarea>
+            </div>
+            <div class="large-12 columns">
+              <a href="#"  class="close-reveal-modal button small">Save</a>
+            </div>
+        </form>
+      </div>
+      <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
     </div>
-    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
-  </div>
 
   <div id="edit-location-status-modal" class="reveal-modal small" data-reveal>
     <h3>Location Status</h3>
