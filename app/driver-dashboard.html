@@ -41,7 +41,8 @@
           <div class="split-panel">
             <div class="fill-white inner" data-equalizer-watch>
               <header class="section-title">
-                <h4>Today's Partner</h4>
+                <h4 class="left">Today's Partner</h4>
+                <a href="#" data-reveal-id="order-summary-modal" class="right order-summary button mint small"><span class="icon" data-icon="u"></span></a>
               <hr>
               </header>
               <b>Blind Butcher</b>
@@ -93,8 +94,10 @@
                 </div>
               </div>
                <div class="options table-tools">
-                <a href="#contact-info" class="button small secondary visible-for-small-only">View Contact Info</a>
-                <a data-reveal-id="change-order-status-modal" href="#" class="button small right">Change Status</a>
+                <a href="#" data-reveal-id="order-summary-modal" class="right visible-for-small-only order-summary button mint"><span class="icon" data-icon="u"></a>
+                <a href="#contact-info" class="right visible-for-small-only contact-info button mint "><span class="icon" data-icon="t"></span></a>
+                <!-- <a href="#contact-info" class="button  secondary visible-for-small-only">View Contact Info</a> -->
+                <a data-reveal-id="change-order-status-modal" href="#" class="button right">Change Order Status</a>
               </div>
             </header>
 
@@ -138,7 +141,7 @@
                         <a data-reveal-id="building-modal"  href="#">Austin Tower</a>
                       </td>
                       <td>
-                        <span class="label mixed">Mixed</span>
+                        <span class="label warning">Error</span>
                       </td>
                     </tr>
                     <tr>
@@ -213,6 +216,32 @@
         </div>
       </section>
    </main>
+
+  <div id="order-summary-modal" class="reveal-modal medium" data-reveal>
+    <h3>Today's Summary</h3>
+    <hr>
+    <table class="order-summary">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kale & Fresh Salmon</td>
+          <td>23</td>
+        <tr>
+          <td>Spinach BLT</td>
+          <td>14</td>
+        </tr>
+          <td>Veggie Stir Fry</td>
+          <td>21</td>
+        </tr>
+      </tbody>
+    </table>
+    <a class="close-reveal-modal exit-reveal-modal">&#215;</a>
+  </div>
 
   <div id="building-modal" class="reveal-modal small" data-reveal>
     <h3>Jefferson Tower</h3>

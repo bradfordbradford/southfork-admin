@@ -92,7 +92,8 @@ $font-family-serif: "pt-serif", Georgia, Cambria, "Times New Roman", Times, seri
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-$font-weight-normal: 200 !default;
+$font-weight-light: 200 !default;
+$font-weight-normal: 300 !default;
 $font-weight-bold: 700 !default;
 
 
@@ -147,6 +148,8 @@ $sea         : #DAE8CC;
 $blue        : #4A90E2;
 
 $gold        : #FAD13E;
+
+$mint        : #A7D9C7;
 
 
 

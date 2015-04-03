@@ -4,12 +4,21 @@
 .driver-dashboard-header {
     margin: 2em auto 3.5em;
     .split-panel {
-        padding: 1em .75em;
+        padding: rem-calc(12 16);
         .inner {
-            padding:1.75rem 1em;
+            padding:rem-calc(16 16 24);
         }
     }
 }
+
+
+.order-summary.button.mint,
+.contact-info.button.mint {
+    padding: rem-calc(10 18);
+    .icon {font-size: rem-calc(24);}
+}
+
+
 
 
 // Sign In
