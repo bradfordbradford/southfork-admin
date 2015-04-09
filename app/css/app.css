@@ -5176,8 +5176,7 @@ meta.foundation-mq-topbar {
         background: #FFFFFF;
         color: #515252; }
     .top-bar-section .has-dropdown {
-      position: relative;
-      width: 160px; }
+      position: relative; }
       .top-bar-section .has-dropdown > a {
         padding-right: 2.75rem !important; }
         .top-bar-section .has-dropdown > a:after {
@@ -6957,7 +6956,9 @@ table.order-summary {
         border-right: 1px solid #E1E1E1; }
       @media only screen and (max-width: 40em) {
         #dashboard-main .dashboard-content table {
-          border-right: 1px solid #E1E1E1; } }
+          border-collapse: inherit; }
+          #dashboard-main .dashboard-content table tfoot {
+            border-right: 0; } }
       #dashboard-main .dashboard-content table .badge[data-icon] {
         position: relative;
         top: 1px;

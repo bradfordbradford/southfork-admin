@@ -109,7 +109,10 @@ $dashboard-padding: rem-calc(16);
                 td { opacity: .5; }
             }
             td:last-child, th:last-child {text-align: right; border-right: 1px solid $silver;}
-            @media #{$small-only} {border-right: 1px solid $silver;}
+            @media #{$small-only} {
+                border-collapse: inherit;
+                tfoot {border-right:0;}
+            }
 
             // Alerts in Rows
             .badge[data-icon] {
